@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Ксения Дудак](https://up.htmlacademy.ru/adaptive/31/user/917321).
-* Наставник: `Неизвестно`.
+* Студент: [Дудак Ксения](https://up.htmlacademy.ru/adaptive/31/user/917321).
+* Наставник: [Антипина Ирина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
