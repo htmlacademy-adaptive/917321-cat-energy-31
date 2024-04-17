@@ -12,9 +12,9 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#" aria-current="page">
-        <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип компании Cat Energy.">
-        <img class="main-header__logo-text" src="#" width="101" height="18" alt="Cat Energy.">
+      <a class="main-header__logo logo" href="#" aria-current="page">
+        <img class="logo__image" src="#" width="33" height="38" alt="Логотип компании Cat Energy.">
+        <img class="logo__text" src="#" width="101" height="18" alt="Cat Energy.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -22,17 +22,17 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#" aria-current="page">
+            <a class="site-list__link site-list__link--active" href="#" aria-current="page">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -56,14 +56,14 @@
       <div class="food-type__wrapper">
         <h2 class="visually-hidden">Виды питания</h2>
         <ul class="food-type__list">
-          <li class="food-type__item food-type__item-slim">
+          <li class="food-type__item food-type__item--slim">
             <h3 class="food-type__title">Похудение</h3>
             <p class="food-type__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
             <a class="food-type__link" href="catalog.html">Каталог slim</a>
           </li>
-          <li class="food-type__item food-type__pro">
+          <li class="food-type__item food-type__item--pro">
             <h3 class="food-type__title">Набор массы</h3>
             <p class="food-type__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -79,23 +79,23 @@
         <h2 class="manual__title">Как это работает</h2>
         <ol class="manual__list">
           <li class="manual__item manual__item--benefit">
-            <p class="manual__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            Функциональное питание содержит только полезные питательные вещества.
           </li>
           <li class="manual__item manual__item--easy">
-            <p class="manual__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
           <li class="manual__item manual__item--just">
-            <p class="manual__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            Замените один-два приема обычной еды на наше функциональное питание.
           </li>
           <li class="manual__item manual__item--enjoy">
-            <p class="manual__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </li>
         </ol>
       </div>
     </section>
 
     <section class="life-example">
-      <div class="life-example__wrapper">
+      <div class="life-example__wrapper wrapper">
         <h2 class="life-example__title">Живой пример</h2>
         <p class="life-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <dl class="life-example__list">
@@ -111,10 +111,8 @@
         <p class="life-example__cost">Затраты на питание: <span class="life-example__cost-value">15 000 РУБ.</span></p>
       </div>
       <div class="life-example__contrast contrast">
-        <div class="contrast__images">
-          <img class="contrast__image contrast__image--fat" src="#" width="280" height="256" alt="Толстый кот Борис">
-          <img class="contrast__image contrast__image--thin" src="#" width="280" height="256" alt="Стройный кот Борис">
-        </div>
+        <img class="contrast__image contrast__image--fat" src="#" width="280" height="256" alt="Толстый кот Борис">
+        <img class="contrast__image contrast__image--thin" src="#" width="280" height="256" alt="Стройный кот Борис">
       </div>
     </section>
   </main>
@@ -130,11 +128,9 @@
       </div>
     </section>
     <div class="main-footer__wrapper">
-      <div class="main-footer__logo footer-logo">
-        <a class="footer-logo__link" href="#" aria-current="page">
-          <img src="#" width="128" height="24" alt="Логотип в подвале">
-        </a>
-      </div>
+      <a class="main-footer__logo logo" href="#" aria-current="page">
+        <img class="logo__text" src="#" width="128" height="24" alt="Логотип в подвале">
+      </a>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">

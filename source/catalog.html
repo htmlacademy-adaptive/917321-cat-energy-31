@@ -12,9 +12,9 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип компании Cat Energy.">
-        <img class="main-header__logo-text" src="#" width="101" height="18" alt="Cat Energy.">
+      <a class="main-header__logo logo" href="index.html">
+        <img class="logo__image" src="#" width="33" height="38" alt="Логотип компании Cat Energy.">
+        <img class="logo__text" src="#" width="101" height="18" alt="Cat Energy.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -22,17 +22,17 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="#" aria-current="page">
+            <a class="site-list__link site-list__link--active" href="#" aria-current="page">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -48,8 +48,10 @@
         <h2 class="visually-hidden">Каталог карточек товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item card">
-            <a href="#">
+            <a class="card__link-image" href="#">
               <img class="card__image" src="#" width="68" height="86" alt="Банка Cat Energy Pro со вкусом курицы">
+            </a>
+            <a class="card__link-text" href="#">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="card__options">
@@ -64,8 +66,10 @@
           </li>
 
           <li class="catalog__item card">
-            <a href="#">
+            <a class="card__link-image" href="#">
               <img class="card__image size-xl" src="#" width="84" height="100" alt="Большая банка Cat Energy Pro со вкусом курицы">
+            </a>
+            <a class="card__link-text" href="#">
               <h3 class="card__title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="card__options">
@@ -80,8 +84,10 @@
           </li>
 
           <li class="catalog__item card">
-            <a href="#">
+            <a class="card__link-image" href="#">
               <img class="card__image" src="#" width="68" height="86" alt="Банка Cat Energy Pro со вкусом рыбы">
+            </a>
+            <a class="card__link-text" href="#">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="card__options">
@@ -96,8 +102,10 @@
           </li>
 
           <li class="catalog__item card">
-            <a href="#">
+            <a class="card__link-image" href="#">
               <img class="card__image size-xl" src="#" width="84" height="100" alt="Большая банка Cat Energy Pro со вкусом рыбы">
+            </a>
+            <a class="card__link-text" href="#">
               <h3 class="card__title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="card__options">
@@ -112,8 +120,10 @@
           </li>
 
           <li class="catalog__item card">
-            <a href="#">
+            <a class="card__link-image" href="#">
               <img class="card__image" src="#" width="68" height="86" alt="Банка Cat Energy Pro со вкусом гречки">
+            </a>
+            <a class="card__link-text" href="#">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="card__options">
@@ -128,8 +138,10 @@
           </li>
 
           <li class="catalog__item card">
-            <a href="#">
+            <a class="card__link-text" href="#">
               <img class="card__image size-xl" src="#" width="84" height="100" alt="Большая банка Cat Energy Pro со вкусом гречки">
+            </a>
+            <a class="card__link-text" href="#">
               <h3 class="card__title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="card__options">
@@ -144,8 +156,10 @@
           </li>
 
           <li class="catalog__item card">
-            <a href="#">
+            <a class="card__link-text" href="#">
               <img class="card__image" src="#" width="68" height="86" alt="Банка Cat Energy Pro со вкусом риса">
+            </a>
+            <a class="card__link-text" href="#">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="card__options">
@@ -225,11 +239,9 @@
       </div>
     </section>
     <div class="main-footer__wrapper">
-      <div class="main-footer__logo footer-logo">
-        <a class="footer-logo__link" href="index.html">
-          <img src="#" width="128" height="24" alt="Логотип в подвале">
-        </a>
-      </div>
+      <a class="main-footer__logo footer-logo__link logo" href="index.html">
+        <img class="logo__text" src="#" width="128" height="24" alt="Логотип в подвале">
+      </a>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
