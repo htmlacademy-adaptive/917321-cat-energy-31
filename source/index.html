@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Проект Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/favicon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -13,8 +17,19 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="#" aria-current="page">
-        <img class="logo__image" src="#" width="33" height="38" alt="Логотип компании Cat Energy">
-        <img class="logo__text" src="#" width="101" height="18" alt="Cat Energy">
+
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/tablet-logo.svg" type="image/svg+xml" width="60" height="50">
+          <img class="logo__image" src="images/mobile-logo.svg" width="33" height="38" alt="Логотип компании Cat Energy">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-text.svg" type="image/svg+xml" width="118" height="21">
+          <source media="(min-width: 768px)" srcset="images/tablet-logo-text.svg" type="image/svg+xml" width="101" height="18">
+          <img class="logo__text" src="images/mobile-logo-text.svg" width="101" height="20" alt="Товарный знак компании Cat Energy">
+        </picture>
+
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -47,7 +62,11 @@
       <div class="hero__wrapper">
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="#" width="280" height="270" alt="Cat Energy Pro с курицей">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/cat-energy@1x.png 1x, images/cat-energy@2x.png 2x" type="image/png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="images/tablet-cat-energy@1x.png 1x, images/tablet-cat-energy@2x.png 2x" type="image/png" width="709" height="609">
+          <img class="hero__image" src="images/mobile-cat-energy@1x.png" srcset="images/mobile-cat-energy@2x.png 2x" width="280" height="270" alt="Оранжевая банка питания Cat Energy Pro с курицей 500 грамм">
+        </picture>
         <a class="hero__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -111,8 +130,14 @@
         <p class="life-example__cost">Затраты на питание: <span class="life-example__cost-value">15 000 РУБ.</span></p>
       </div>
       <div class="life-example__contrast contrast slider">
-        <img class="slider__image slider__image--fat" src="#" width="280" height="256" alt="Толстый кот Борис">
-        <img class="slider__image slider__image--slim" src="#" width="280" height="256" alt="Стройный кот Борис">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/tablet-fat-cat@1x.png 1x, images/tablet-fat-cat@2x.png 2x" type="image/png" width="560" height="512">
+          <img class="slider__image slider__image--fat" src="images/mobile-fat-cat@1x.png" srcset="images/mobile-fat-cat@2x.png 2x" width="280" height="256" alt="Толстый кот Борис">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/tablet-slim-cat@1x.png 1x, images/tablet-slim-cat@2x.png 2x" type="image/png" width="560" height="512">
+          <img class="slider__image slider__image--slim" src="images/mobile-slim-cat@1x.png" srcset="images/mobile-slim-cat@2x.png 2x" width="280" height="256" alt="Стройный кот Борис">
+        </picture>
         <button class="slider__button" type="button">
           <span class="visually-hidden">Передвинуть ползунок слайдера</span>
         </button>
@@ -127,13 +152,17 @@
         <p class="welcome__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="welcome__map map">
-        <img class="map__image" src="#" width="320" height="362" alt="Адрес на карте">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" type="image/png" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="images/tablet-map@1x.png 1x, images/tablet-map@2x.png 2x" type="image/png" width="768" height="400">
+          <img class="map__image" src="images/mobile-map@1x.png" srcset="images/mobile-map@2x.png 2x" width="320" height="362" alt="Адрес на карте">
+        </picture>
       </div>
     </section>
 
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="#" aria-current="page">
-        <img class="logo__text" src="#" width="128" height="24" alt="Логотип в подвале">
+        <img class="logo__text" src="images/mobile-footer-logo.svg" width="128" height="24" alt="Товарный знак компании Cat Energy в футере">
       </a>
 
       <ul class="main-footer__social social">
@@ -149,7 +178,9 @@
         </li>
       </ul>
 
-      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+        <img class="copyright__text" src="images/developer-logo.svg" width="27" height="34" alt="Логотип разработчика">
       </a>
 
     </div>
