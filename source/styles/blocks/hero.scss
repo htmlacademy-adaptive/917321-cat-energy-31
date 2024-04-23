@@ -7,11 +7,20 @@
 }
 
 .hero__title {
-
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: $white-color;
+  background-color: $bg-basic-green;
 }
 
 .hero__slogan {
-
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white-color;
+  text-transform: uppercase;
+  background-color: $bg-basic-green;
 }
 
 .hero__image {

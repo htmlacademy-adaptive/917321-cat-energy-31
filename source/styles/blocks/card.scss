@@ -15,15 +15,21 @@
 }
 
 .card__link-text {
-
+  text-decoration: none;
 }
 
 .card__title {
-
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $secondary-font;
+  color: $title-color-text;
+  text-transform: uppercase;
 }
 
 .card__options {
-
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .card__key {
@@ -32,6 +38,11 @@
 
 .card__value {
 
+}
+
+.card__text {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .card__button {
