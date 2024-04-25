@@ -7,16 +7,11 @@
 }
 
 .manual__title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
-  color: $title-color-text;
+  @include font ($family: $secondary-font, $size: 36px, $height: 40px, $color: $text-title-color);
 }
 
 .manual__list {
-  font-size: 14px;
-  line-height: 18px;
+  @include font ($size: 14px, $height: 18px);
 }
 
 .manual__item {

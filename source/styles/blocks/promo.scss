@@ -1,10 +1,18 @@
 .promo {
+  background-image:
+    linear-gradient($bg-opacity-green, $bg-opacity-green),
+    image-set(
+      url("../../images/cat-in-bag-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/cat-in-bag-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/cat-in-bag-mobile@2x.png") type("image/png") 2x,
+      url("../../images/cat-in-bag-mobile@21x.png") type("image/png") 1x
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0, 0 0;
   background-color: $bg-basic-green;
 }
 
 .promo__text {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: $white-color;
+  @include font ($size: 16px, $height: 20px, $color: $white-color);
 }

@@ -3,9 +3,5 @@
 }
 
 .main-container__heading {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $title-color-text;
+  @include font ($family: $secondary-font, $size: 36px, $color: $text-title-color);
 }

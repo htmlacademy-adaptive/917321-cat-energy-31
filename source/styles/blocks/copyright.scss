@@ -1,7 +1,5 @@
 .copyright {
-  font-size: 14px;
-  line-height: 20px;
-  color: $base-color-text;
+  @include font ($size: 14px, $height: 20px);
   text-decoration: none;
 }
 

@@ -7,19 +7,11 @@
 }
 
 .subscribe__title {
-  font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $title-color-text;
+  @include font ($family: $secondary-font, $size: 24px, $color: $text-title-color);
 }
 
 .subscribe__text {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $title-color-text;
+  @include font ($family: $secondary-font, $size: 16px, $height: 24px, $color: $text-title-color);
 }
 
 .subscribe__form {
@@ -27,10 +19,8 @@
 }
 
 .subscribe__input {
-  font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 400;
+  @include font ($family: $secondary-font, $size: 20px);
+
   text-transform: uppercase;
 }
 

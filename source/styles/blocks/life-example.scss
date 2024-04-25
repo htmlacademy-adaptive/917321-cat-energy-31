@@ -7,21 +7,15 @@
 }
 
 .life-example__title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
-  color: $title-color-text;
+  @include font ($family: $secondary-font, $size: 36px, $height: 40px, $color: $text-title-color);
 }
 
 .life-example__text {
-  font-size: 14px;
-  line-height: 18px;
+  @include font ($size: 14px, $height: 18px);
 }
 
 .life-example__list {
-  font-size: 14px;
-  line-height: 18px;
+  @include font ($size: 14px, $height: 18px);
 }
 
 .life-example__item {
@@ -29,24 +23,19 @@
 }
 
 .life-example__number {
-  font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 24px;
+  @include font ($family: $secondary-font, $size: 24px, $color: $text-title-color);
+
   text-transform: uppercase;
-  color: $title-color-text;
 }
 
 .life-example__description {
-  font-size: 12px;
-  line-height: 12px;
+  @include font ($size: 12px);
 }
 
 .life-example__cost {
-  font-family: $secondary-font;
-  font-size: 14px;
-  line-height: 20px;
+  @include font ($family: $secondary-font, $size: 14px, $height: 20px, $color: $text-title-color);
+
   text-transform: uppercase;
-  color: $title-color-text;
 }
 
 .life-example__cost-value {

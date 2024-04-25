@@ -1,9 +1,13 @@
 /* здесь используйте глобальные переменные */
-$base-color-text: #444444;
-$title-color-text: #000000;
-$secondary-color-text: #222222;
+$primary-font: "Lato", "Arial", sans-serif;
+$secondary-font: "Oswald", "Arial", sans-serif;
+
+$text-base-color: #444444;
+$text-title-color: #000000;
+$text-secondary-color: #222222;
 
 $white-color: #ffffff;
 
 $bg-basic-green: #68b738;
+$bg-opacity-green: rgba(104, 183, 56, 0.85);
 $bg-basic-gray: #f2f2f2;

@@ -7,11 +7,7 @@
 }
 
 .extra__title {
-  font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $title-color-text;
+  @include font ($family: $secondary-font, $size: 24px, $color: $text-title-color);
 }
 
 .extra__list {
