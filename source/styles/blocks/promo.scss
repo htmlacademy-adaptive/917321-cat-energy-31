@@ -15,4 +15,15 @@
 
 .promo__text {
   @include font ($size: 16px, $height: 20px, $color: $white-color);
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon-gift");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    display: block;
+  }
 }

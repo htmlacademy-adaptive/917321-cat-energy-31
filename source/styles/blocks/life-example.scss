@@ -1,9 +1,10 @@
 .life-example {
   background-color: $bg-basic-gray;
+  padding: 0 20px;
 }
 
 .life-example__wrapper {
-
+  min-width: 280px;
 }
 
 .life-example__title {

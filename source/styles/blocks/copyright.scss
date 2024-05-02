@@ -1,8 +1,31 @@
 .copyright {
-  @include font ($size: 14px, $height: 20px);
+  @include font ($size: 16px, $height: 20px);
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all, 1.3s;
+
+  &::after {
+    content: "";
+    background-color: #666666;
+    width: 27px;
+    height: 34px;
+    display: block;
+    mask-image: url("../../icons/stack.svg#developer-logo");
+    mask-position: 50%;
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+    transition: all, 1.3s;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.copyright__logo {
-
-}

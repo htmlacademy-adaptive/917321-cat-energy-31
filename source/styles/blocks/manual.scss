@@ -15,21 +15,51 @@
 }
 
 .manual__item {
+  position: relative;
 
+  &::before {
+    content: "";
+    background-color: $bg-basic-green;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
 }
 
 .manual__item--benefit {
+  position: relative;
 
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
+  }
 }
 
 .manual__item--easy {
+  position: relative;
 
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-water");
+    background-size: 26px 29px;
+  }
 }
 
 .manual__item--just {
+  position: relative;
 
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-eat");
+    background-size: 25px 30px;
+  }
 }
 
 .manual__item--enjoy {
+  position: relative;
 
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-clock");
+    background-size: 27px 31px;
+  }
 }

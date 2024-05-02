@@ -1,7 +1,6 @@
 .hero {
-  background-color: $bg-basic-green;
   background-image:
-    linear-gradient($bg-opacity-green, $bg-opacity-green),
+    linear-gradient(to bottom, $bg-opacity-green 302px, $white-color 302px),
     image-set(
       url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
@@ -9,8 +8,8 @@
       url("../../images/index-background-mobile@21x.png") type("image/png") 1x
     );
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 0, 0 0;
+  background-size: cover, auto 302px;
+  background-position: 50% 0, 50% 0;
 }
 
 .hero__wrapper {

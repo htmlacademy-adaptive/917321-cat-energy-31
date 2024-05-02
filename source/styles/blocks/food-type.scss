@@ -12,14 +12,47 @@
 
 .food-type__item {
   background-color: $bg-basic-gray;
+
+  &::before {
+    content: "";
+    background-color: $bg-basic-green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
 }
 
 .food-type__item--slim {
+  position: relative;
 
+  &::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-repeat: no-repeat;
+    background-size: 36px 50px;
+    width: 36px;
+    height: 50px;
+    position: absolute;
+    top: -3px;
+    left: 7px;
+  }
 }
 
 .food-type__item--pro {
+  position: relative;
 
+  &::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-repeat: no-repeat;
+    background-size: 67px 28px;
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    top: 9px;
+    left: -11px;
+  }
 }
 
 .food-type__title {
@@ -34,4 +67,36 @@
 .food-type__link {
   @include font ($family: $secondary-font, $size: 16px, $color: $text-title-color);
   text-transform: uppercase;
+  position: relative;
+  transition: all, 1.3s;
+
+  width: 140px;
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    mask-image: url("../../icons/stack.svg#arrow");
+    background-color: #000000;
+    mask-position: 100%;
+    mask-repeat: no-repeat;
+    mask-size: 24px 12px;
+    transition: all, 1.3s;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    width: 32px;
+    height: 10px;
+    mask-size: 32px 10px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
