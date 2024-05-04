@@ -10,8 +10,12 @@
   border: none;
   width: 24px;
   height: 24px;
+
+  &--close {
+    background-image: url("../../icons/stack.svg#cross-for-close-mob-menu");
+  }
 }
 
 .main-nav__list {
-
+  @include list-reset ();
 }

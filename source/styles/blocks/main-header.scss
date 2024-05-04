@@ -1,11 +1,12 @@
 .main-header {
-
+  min-width: 320px;
 }
 
 .main-header__wrapper {
-
+  @include flex-box ($flex-direction: row);
+  padding: 13px 20px;
 }
 
 .main-header__logo {
-
+  gap: 56px;
 }

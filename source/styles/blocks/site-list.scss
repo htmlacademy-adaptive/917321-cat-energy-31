@@ -1,5 +1,7 @@
 .site-list {
-
+  @include font ($family: $secondary-font, $size: 20px, $color: $text-title-color);
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .site-list__item {
@@ -7,9 +9,10 @@
 }
 
 .site-list__link {
-  @include font ($family: $secondary-font, $size: 20px, $color: $text-title-color);
-
-  text-transform: uppercase;
+  color: inherit;
+  border-top: 1px solid $border-color;
+  padding: 22px 23px 24px;
+  display: block;
 }
 
 .site-list__link--active {

@@ -1,4 +1,5 @@
 .logo {
+  @include flex-box ($flex-direction: row);
   transition: all, 1.3s;
 
   &:hover,
@@ -16,5 +17,5 @@
 }
 
 .logo__text {
-
+  display: block;
 }
