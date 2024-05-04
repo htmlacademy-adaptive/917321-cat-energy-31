@@ -1,5 +1,5 @@
 .manual {
-
+  padding: 10px 20px 49px;
 }
 
 .manual__wrapper {
@@ -8,14 +8,22 @@
 
 .manual__title {
   @include font ($family: $secondary-font, $size: 36px, $height: 40px, $color: $text-title-color);
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 .manual__list {
   @include font ($size: 14px, $height: 18px);
+  @include list-reset ();
+  @include flex-box ($align-items: normal);
+  gap: 20px;
 }
 
 .manual__item {
-  position: relative;
+  @include flex-box ($align-items: normal, $flex-direction: row, $justify-content: start);
+  flex-wrap: nowrap;
+  gap: 20px;
 
   &::before {
     content: "";
@@ -25,41 +33,34 @@
     width: 60px;
     height: 60px;
     display: block;
+    flex-shrink: 0;
   }
-}
 
-.manual__item--benefit {
-  position: relative;
-
-  &::before {
-    background-image: url("../../icons/stack.svg#icon-leaf");
-    background-size: 30px 32px;
+  &--benefit {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-leaf");
+      background-size: 30px 32px;
+    }
   }
-}
 
-.manual__item--easy {
-  position: relative;
-
-  &::before {
-    background-image: url("../../icons/stack.svg#icon-water");
-    background-size: 26px 29px;
+  &--easy {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-water");
+      background-size: 26px 29px;
+    }
   }
-}
 
-.manual__item--just {
-  position: relative;
-
-  &::before {
-    background-image: url("../../icons/stack.svg#icon-eat");
-    background-size: 25px 30px;
+  &--just {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-eat");
+      background-size: 25px 30px;
+    }
   }
-}
 
-.manual__item--enjoy {
-  position: relative;
-
-  &::before {
-    background-image: url("../../icons/stack.svg#icon-clock");
-    background-size: 27px 31px;
+  &--enjoy {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-clock");
+      background-size: 27px 31px;
+    }
   }
 }
