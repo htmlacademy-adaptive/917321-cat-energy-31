@@ -1,13 +1,23 @@
 .card {
+  display: grid;
+  grid-template-areas:
+    "image  title"
+    "image  options"
+    "button button";
+  padding: 20px 25px;
+  border-bottom: 1px solid #ebebeb;
 
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+  }
 }
 
 .card__link-image {
-
+  grid-area: image;
 }
 
 .card__image {
-
+  display: block;
 }
 
 .card__image--size-xl {
@@ -15,16 +25,27 @@
 }
 
 .card__link-text {
+  grid-area: title;
+  margin-bottom: 14px;
 }
 
 .card__title {
   @include font ($family: $secondary-font, $size: 16px, $height: 20px, $color: $text-secondary-color);
 
   text-transform: uppercase;
+  margin: 0;
+  max-width: 80px;
 }
 
 .card__options {
   @include font ($size: 12px, $height: 16px);
+  grid-area: options;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.card__option {
+  @include flex-box ($flex-direction:row);
 }
 
 .card__key {
@@ -37,16 +58,29 @@
 
 .card__text {
   @include font ($size: 12px, $height: 16px);
+  margin: 0;
+  margin-bottom: 21px;
 }
 
 .card__button {
-
+  grid-area: button;
+  justify-self: stretch;
 }
 
 .card__more {
+  grid-template-areas:
+    "title"
+    "options"
+    "button";
+  justify-items: center;
+  padding-top: 78px;
   background-image: url("../../icons/stack.svg#icon-plus");
-  background-position: 50% 5px;
+  background-position: 50% 25px;
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  width: 280px;
+
+  .card__title {
+    max-width: none;
+    margin-bottom: 8px;
+  }
 }

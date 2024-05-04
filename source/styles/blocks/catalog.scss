@@ -7,7 +7,7 @@
 }
 
 .catalog__list {
-
+  @include list-reset();
 }
 
 .catalog__item {

@@ -1,7 +1,10 @@
 .main-container {
-
+  padding-top: 27px;
 }
 
 .main-container__heading {
   @include font ($family: $secondary-font, $size: 36px, $color: $text-title-color);
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0 20px;
 }

@@ -11,10 +11,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0, 0 0;
+  padding: 60px 60px 43px;
 }
 
 .promo__text {
   @include font ($size: 16px, $height: 20px, $color: $white-color);
+  @include flex-box();
+  gap: 47px;
+  text-align: center;
+  margin: 0;
   position: relative;
 
   &::before {

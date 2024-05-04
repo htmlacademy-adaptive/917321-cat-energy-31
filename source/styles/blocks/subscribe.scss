@@ -1,5 +1,5 @@
 .subscribe {
-
+  padding: 20px 20px 40px;
 }
 
 .subscribe__wrapper {
@@ -8,22 +8,47 @@
 
 .subscribe__title {
   @include font ($family: $secondary-font, $size: 24px, $color: $text-title-color);
+  margin: 0;
+  margin-bottom: 32px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 108px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    background-color: $bg-basic-green;
+  }
 }
 
 .subscribe__text {
   @include font ($family: $secondary-font, $size: 16px, $height: 24px, $color: $text-title-color);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .subscribe__form {
-
+  @include flex-box ($align-items: normal);
+  gap: 16px;
 }
 
 .subscribe__input {
   @include font ($family: $secondary-font, $size: 20px);
 
   text-transform: uppercase;
+  padding: 13px;
+  border: 1px solid #cdcdcd;
+
+  &::placeholder {
+    color: $text-base-color;
+  }
 }
 
 .subscribe__button {
   border: none;
+  padding: 15px;
 }

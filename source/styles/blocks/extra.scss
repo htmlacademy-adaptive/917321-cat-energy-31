@@ -1,5 +1,5 @@
 .extra {
-
+  padding: 25px 20px 20px;
 }
 
 .extra__wrapper {
@@ -8,10 +8,24 @@
 
 .extra__title {
   @include font ($family: $secondary-font, $size: 24px, $color: $text-title-color);
+  margin: 0;
+  margin-bottom: 36px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 34px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    background-color: $bg-basic-green;
+  }
 }
 
 .extra__list {
-
+  @include list-reset ();
 }
 
 .extra__item {

@@ -1,5 +1,7 @@
 .welcome {
-
+  &--catalog {
+    background-color: $bg-basic-gray;
+  }
 }
 
 .welcome__wrapper {
