@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-size: cover, auto 302px;
   background-position: 50% 0, 50% 0;
+
+  text-align: center;
+  padding: 27px 20px 10px;
 }
 
 .hero__wrapper {
@@ -17,18 +20,23 @@
 
 .hero__title {
   @include font ($family: $secondary-font, $size: 36px, $color: $white-color);
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .hero__slogan {
   @include font ($family: $secondary-font, $size: 14px, $color: $white-color);
 
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .hero__image {
-
+  margin: 0 auto 3px;
 }
 
-.hero__button  {
-
+.hero__button {
+  width: 280px;
+  margin: 0 auto;
 }
