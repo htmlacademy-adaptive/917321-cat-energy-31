@@ -7,11 +7,13 @@
 }
 
 .main-footer__wrapper {
-
+  @include flex-box($align-items: normal);
+  gap: 20px;
+  padding: 40px 20px;
 }
 
-.main-footer__logo  {
-
+.main-footer__logo {
+  align-self: center;
 }
 
 .main-footer__social {
