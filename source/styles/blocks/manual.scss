@@ -11,6 +11,10 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .manual__list {
@@ -18,12 +22,22 @@
   @include list-reset ();
   @include flex-box ($align-items: normal);
   gap: 20px;
+
+  counter-reset: list;
+
+  @media (min-width: $tablet-width) {
+
+    flex-flow: row wrap;
+    gap: 37px 130px;
+    justify-content: start;
+  }
 }
 
 .manual__item {
   @include flex-box ($align-items: normal, $flex-direction: row, $justify-content: start);
   flex-wrap: nowrap;
   gap: 20px;
+  position: relative;
 
   &::before {
     content: "";
@@ -61,6 +75,27 @@
     &::before {
       background-image: url("../../icons/stack.svg#icon-clock");
       background-size: 27px 31px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+
+    max-width: calc($tablet-width / 2 - 130px);
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-end;
+    min-height: 230px;
+    padding-right: 20px;
+
+    &::after {
+      @include font ($family: $secondary-font, $size: 280px, $color: $bg-basic-gray);
+
+      content: counter(list);
+      counter-increment: list;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
     }
   }
 }

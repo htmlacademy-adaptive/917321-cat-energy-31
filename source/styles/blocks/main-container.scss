@@ -1,5 +1,7 @@
 .main-container {
-  padding-top: 27px;
+  &--catalog {
+    padding-top: 27px;
+  }
 }
 
 .main-container__heading {
