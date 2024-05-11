@@ -4,12 +4,20 @@
 
 .food-type__wrapper {
   padding: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 45px;
+  }
 }
 
 .food-type__list {
   @include list-reset();
   @include flex-box ($align-items: normal);
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
 }
 
 .food-type__item {
@@ -51,6 +59,36 @@
     left: 13px;
     background-image: url("../../icons/stack.svg#cat-pro");
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 53px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: auto;
+      right: 63px;
+    }
+
+    &::after {
+      left: auto;
+    }
+
+    &--slim::after {
+      width: 140px;
+      height: 194px;
+      right: 93px;
+      top: 81px;
+    }
+
+    &--pro::after {
+      width: 268px;
+      height: 112px;
+      right: 29px;
+      top: 135px;
+    }
+  }
 }
 
 .food-type__title {
@@ -59,6 +97,13 @@
   margin: 0;
   margin-bottom: 29px;
   margin-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .food-type__description {
@@ -67,6 +112,15 @@
   margin: 0;
   margin-bottom: 15px;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    padding-bottom: 0;
+    max-width: 340px;
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .food-type__link {
@@ -97,5 +151,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }

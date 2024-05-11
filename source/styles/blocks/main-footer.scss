@@ -10,6 +10,11 @@
   @include flex-box($align-items: normal);
   gap: 20px;
   padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    flex-direction: row;
+  }
 }
 
 .main-footer__logo {

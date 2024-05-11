@@ -12,6 +12,11 @@
   background-size: cover;
   background-position: 50% 0, 0 0;
   padding: 60px 60px 43px;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 120px 60px 77px;
+    background-position: 50% 0, 0 60%;
+  }
 }
 
 .promo__text {
@@ -30,5 +35,15 @@
     width: 80px;
     height: 80px;
     display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row nowrap;
+    gap: 264px;
+    text-align: left;
+
+    &::before {
+      flex-basis: 50%;
+    }
   }
 }

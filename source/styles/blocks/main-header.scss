@@ -1,12 +1,25 @@
 .main-header {
   min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    @include flex-box ($flex-direction: row);
+    padding: 25px 30px;
+  }
 }
 
 .main-header__wrapper {
   @include flex-box ($flex-direction: row);
   padding: 13px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-header__logo {
   gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
 }

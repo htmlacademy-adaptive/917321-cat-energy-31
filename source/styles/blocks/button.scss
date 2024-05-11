@@ -15,4 +15,10 @@
     background-color: $bg-basic-gray;
     color: $text-base-color;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+  }
 }

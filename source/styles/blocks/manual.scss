@@ -1,5 +1,10 @@
 .manual {
   padding: 10px 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 47px;
+    border-bottom: 1px solid $border-color;
+  }
 }
 
 .manual__wrapper {
@@ -14,6 +19,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -28,8 +35,9 @@
   @media (min-width: $tablet-width) {
 
     flex-flow: row wrap;
-    gap: 37px 130px;
+    gap: 77px 130px;
     justify-content: start;
+    margin-bottom: 47px;
   }
 }
 

@@ -108,27 +108,34 @@
       <div class="life-example__wrapper wrapper">
         <h2 class="life-example__title">Живой пример</h2>
         <p class="life-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="life-example__list">
-          <div class="life-example__item">
-            <dt class="life-example__number">5 кг</dt>
-            <dd class="life-example__description">снижение веса</dd>
-          </div>
-          <div class="life-example__item">
-            <dt class="life-example__number">60 дней</dt>
-            <dd class="life-example__description">затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="life-example__cost">Затраты на питание: <span class="life-example__cost-value">15 000 РУБ.</span></p>
+        <div class="life-example__item-wrapper">
+          <dl class="life-example__list">
+            <div class="life-example__item">
+              <dt class="life-example__number">5 кг</dt>
+              <dd class="life-example__description">снижение веса</dd>
+            </div>
+            <div class="life-example__item">
+              <dt class="life-example__number">60 дней</dt>
+              <dd class="life-example__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="life-example__cost">Затраты на питание: <span class="life-example__cost-value">15 000 РУБ.</span></p>
+        </div>
+
       </div>
       <div class="life-example__contrast contrast slider">
-        <picture>
-          <source media="(min-width: 768px)" srcset="images/fat-cat@1x.png 1x, images/fat-cat@2x.png 2x" type="image/png" width="560" height="512">
-          <img class="slider__image slider__image--fat" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис">
-        </picture>
-        <picture>
-          <source media="(min-width: 768px)" srcset="images/slim-cat@1x.png 1x, images/slim-cat@2x.png 2x" type="image/png" width="560" height="512">
-          <img class="slider__image slider__image--slim" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис">
-        </picture>
+        <div class="slider__before">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/fat-cat@1x.png 1x, images/fat-cat@2x.png 2x" type="image/png" width="560" height="512">
+            <img class="slider__image slider__image--fat" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис">
+          </picture>
+        </div>
+        <div class="slider__after">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/slim-cat@1x.png 1x, images/slim-cat@2x.png 2x" type="image/png" width="560" height="512">
+            <img class="slider__image slider__image--slim" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис">
+          </picture>
+        </div>
         <button class="slider__button" type="button">
           <span class="visually-hidden">Передвинуть ползунок слайдера</span>
         </button>
@@ -140,7 +147,7 @@
     <section class="main-footer__welcome welcome">
       <div class="welcome__wrapper">
         <h2 class="welcome__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-        <p class="welcome__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="welcome__adress">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="welcome__adress-city">Санкт-Петербург</span></p>
       </div>
       <div class="welcome__map map">
         <picture>

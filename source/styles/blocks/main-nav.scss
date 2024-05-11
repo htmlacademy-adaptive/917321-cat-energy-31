@@ -1,5 +1,12 @@
 .main-nav {
+  &__list {
+    @include list-reset ();
 
+    @media (min-width: $tablet-width) {
+      @include flex-box ($flex-direction:row);
+      gap: 30px;
+    }
+  }
 }
 
 .main-nav__toggle {
@@ -14,8 +21,8 @@
   &--close {
     background-image: url("../../icons/stack.svg#cross-for-close-mob-menu");
   }
-}
 
-.main-nav__list {
-  @include list-reset ();
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

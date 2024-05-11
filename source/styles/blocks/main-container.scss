@@ -2,6 +2,12 @@
   &--catalog {
     padding-top: 27px;
   }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      padding-top: 40px;
+    }
+  }
 }
 
 .main-container__heading {
@@ -9,4 +15,11 @@
   margin: 0;
   margin-bottom: 41px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    margin-bottom: 84px;
+  }
 }
