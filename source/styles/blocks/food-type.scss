@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 30px 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 110px 0;
+  }
 }
 
 .food-type__list {
@@ -17,6 +21,11 @@
 
   @media (min-width: $tablet-width) {
     gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
   }
 }
 
@@ -89,6 +98,36 @@
       top: 135px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      right: auto;
+    }
+
+    &::after {
+      right: auto;
+    }
+
+    &--slim::after {
+      width: 70px;
+      height: 97px;
+      left: 67px;
+      top: 41px;
+    }
+
+    &--pro::after {
+      width: 134px;
+      height: 100px;
+      left: 33px;
+      top: 47px;
+    }
+  }
 }
 
 .food-type__title {
@@ -103,6 +142,11 @@
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
@@ -120,6 +164,10 @@
     border-bottom: none;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 457px;
   }
 }
 

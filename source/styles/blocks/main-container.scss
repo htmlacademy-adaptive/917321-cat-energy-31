@@ -8,6 +8,12 @@
       padding-top: 40px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--catalog {
+      padding-top: 188px;
+    }
+  }
 }
 
 .main-container__heading {
@@ -21,5 +27,9 @@
     line-height: 60px;
     padding: 0 30px;
     margin-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }

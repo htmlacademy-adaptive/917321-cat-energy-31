@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 80px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 96px 110px 104px;
+  }
 }
 
 .subscribe__wrapper {
@@ -49,6 +53,12 @@
       background-color: $bg-basic-green;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 72px;
+  }
 }
 
 .subscribe__text {
@@ -62,6 +72,10 @@
     line-height: 32px;
     max-width: 632px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
 }
 
 .subscribe__form {
@@ -73,6 +87,10 @@
     gap: 0;
     max-width: 632px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
   }
 }
 
@@ -89,6 +107,10 @@
 
   @media (min-width: $tablet-width) {
     min-width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
   }
 }
 

@@ -5,6 +5,11 @@
     padding: 0 30px 47px;
     border-bottom: 1px solid $border-color;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 110px 0;
+    border: none;
+  }
 }
 
 .manual__wrapper {
@@ -38,6 +43,12 @@
     gap: 77px 130px;
     justify-content: start;
     margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    gap: 94px;
+    justify-content: space-between;
   }
 }
 
@@ -105,5 +116,10 @@
       right: 0;
       z-index: -1;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    max-width: 230px;
   }
 }

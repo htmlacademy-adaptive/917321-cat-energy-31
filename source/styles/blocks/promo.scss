@@ -17,6 +17,12 @@
     padding: 57px 120px 60px 77px;
     background-position: 50% 0, 0 60%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 42px 43px;
+    max-width: 245px;
+    align-self: stretch;
+  }
 }
 
 .promo__text {
@@ -44,6 +50,17 @@
 
     &::before {
       flex-basis: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 46px;
+    text-align: center;
+
+    &::before {
+      flex-basis: auto;
+      height: 83px;
     }
   }
 }
