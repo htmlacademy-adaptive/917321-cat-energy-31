@@ -15,21 +15,3 @@
     }
   }
 }
-
-.main-container__heading {
-  @include font ($family: $secondary-font, $size: 36px, $color: $text-title-color);
-  margin: 0;
-  margin-bottom: 41px;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    padding: 0 30px;
-    margin-bottom: 84px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
-}

@@ -9,9 +9,11 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 1;
-    min-width: 1220px;
+    width: 100%;
+    max-width: 1220px;
     top: 0;
-    left: 110px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 55px 0 0;
   }
 }
@@ -30,5 +32,23 @@
 
   @media (min-width: $tablet-width) {
     gap: 13px;
+  }
+}
+
+.main-header__nav-toggle {
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#menu-burger");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+  width: 24px;
+  height: 24px;
+
+  &--close {
+    background-image: url("../../icons/stack.svg#cross-for-close-mob-menu");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

@@ -1,16 +1,15 @@
-.food-type {
-
-}
-
 .food-type__wrapper {
   padding: 10px 20px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 82px 110px 0;
+    padding: 82px 0 0;
+    max-width: 1220px;
   }
 }
 

@@ -13,7 +13,12 @@
 }
 
 .manual__wrapper {
+  margin-right: auto;
+  margin-left: auto;
 
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
 }
 
 .manual__title {

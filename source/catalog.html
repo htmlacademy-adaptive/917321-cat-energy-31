@@ -24,7 +24,7 @@
         </picture>
         <img class="logo__text" src="images/logo-text.svg" width="101" height="20" alt="Товарный знак компании Cat Energy">
       </a>
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      <button class="main-header__nav-toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
@@ -50,228 +50,225 @@
   </header>
 
   <main class="main-container main-container--catalog">
-    <h1 class="main-container__heading">Каталог продукции</h1>
     <section class="catalog">
-      <div class="catalog__wrapper">
-        <h2 class="visually-hidden">Каталог карточек товаров</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item card">
-            <a class="card__link-image" href="#">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="images/chicken-pro-500g@1x.png 1x, images/chicken-pro-500g@2x.png 2x" type="image/png" width="169" height="210">
-                <source media="(min-width: 768px)" srcset="images/chicken-pro-500g-tablet@1x.png 1x, images/chicken-pro-500g-tablet@2x.png 2x" type="image/png" width="200" height="210">
-                <img class="card__image" src="images/chicken-pro-500g-mobile@1x.png" srcset="images/chicken-pro-500g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом курицы 500 грамм">
-              </picture>
-            </a>
-            <a class="card__link-text" href="#">
-              <h3 class="card__title">Cat Energy PRO 500 г</h3>
-            </a>
-            <dl class="card__options">
-              <div class="card__option">
-                <dt class="card__key">Масса</dt>
-                <dd class="card__value">500 г</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Вкус</dt>
-                <dd class="card__value">Курица</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Цена</dt>
-                <dd class="card__value">700 ₽</dd>
-              </div>
-            </dl>
-            <a class="card__button button" href="#">Заказать</a>
-          </li>
+      <h1 class="catalog__heading">Каталог продукции</h1>
+      <ul class="catalog__list">
+        <li class="catalog__item card">
+          <a class="card__link-image" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/chicken-pro-500g@1x.png 1x, images/chicken-pro-500g@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/chicken-pro-500g-tablet@1x.png 1x, images/chicken-pro-500g-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="images/chicken-pro-500g-mobile@1x.png" srcset="images/chicken-pro-500g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом курицы 500 грамм">
+            </picture>
+          </a>
+          <a class="card__link-text" href="#">
+            <h3 class="card__title">Cat Energy PRO 500 г</h3>
+          </a>
+          <dl class="card__options">
+            <div class="card__option">
+              <dt>Масса</dt>
+              <dd>500 г</dd>
+            </div>
+            <div class="card__option">
+              <dt>Вкус</dt>
+              <dd>Курица</dd>
+            </div>
+            <div class="card__option">
+              <dt>Цена</dt>
+              <dd>700 ₽</dd>
+            </div>
+          </dl>
+          <a class="card__button button" href="#">Заказать</a>
+        </li>
 
-          <li class="catalog__item card">
-            <a class="card__link-image" href="#">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="images/chicken-pro-1000g@1x.png 1x, images/chicken-pro-1000g@2x.png 2x" type="image/png" width="169" height="210">
-                <source media="(min-width: 768px)" srcset="images/chicken-pro-1000g-tablet@1x.png 1x, images/chicken-pro-1000g-tablet@2x.png 2x" type="image/png" width="200" height="210">
-                <img class="card__image card__image--size-xl" src="images/chicken-pro-1000g-mobile@1x.png" srcset="images/chicken-pro-1000g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом курицы 1000 грамм">
-              </picture>
-            </a>
-            <a class="card__link-text" href="#">
-              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
-            </a>
-            <dl class="card__options">
-              <div class="card__option">
-                <dt class="card__key">Масса</dt>
-                <dd class="card__value">1000 г</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Вкус</dt>
-                <dd class="card__value">Курица</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Цена</dt>
-                <dd class="card__value">1000 ₽</dd>
-              </div>
-            </dl>
-            <a class="card__button button" href="#">Заказать</a>
-          </li>
+        <li class="catalog__item card">
+          <a class="card__link-image" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/chicken-pro-1000g@1x.png 1x, images/chicken-pro-1000g@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/chicken-pro-1000g-tablet@1x.png 1x, images/chicken-pro-1000g-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="images/chicken-pro-1000g-mobile@1x.png" srcset="images/chicken-pro-1000g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом курицы 1000 грамм">
+            </picture>
+          </a>
+          <a class="card__link-text" href="#">
+            <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+          </a>
+          <dl class="card__options">
+            <div class="card__option">
+              <dt>Масса</dt>
+              <dd>1000 г</dd>
+            </div>
+            <div class="card__option">
+              <dt>Вкус</dt>
+              <dd>Курица</dd>
+            </div>
+            <div class="card__option">
+              <dt>Цена</dt>
+              <dd>1000 ₽</dd>
+            </div>
+          </dl>
+          <a class="card__button button" href="#">Заказать</a>
+        </li>
 
-          <li class="catalog__item card">
-            <a class="card__link-image" href="#">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="images/fish-pro-500g@1x.png 1x, images/fish-pro-500g@2x.png 2x" type="image/png" width="169" height="210">
-                <source media="(min-width: 768px)" srcset="images/fish-pro-500g-tablet@1x.png 1x, images/fish-pro-500g-tablet@2x.png 2x" type="image/png" width="200" height="210">
-                <img class="card__image" src="images/fish-pro-500g-mobile@1x.png" srcset="images/fish-pro-500g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом рыбы 500 грамм">
-              </picture>
-            </a>
-            <a class="card__link-text" href="#">
-              <h3 class="card__title">Cat Energy PRO 500 г</h3>
-            </a>
-            <dl class="card__options">
-              <div class="card__option">
-                <dt class="card__key">Масса</dt>
-                <dd class="card__value">500 г</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Вкус</dt>
-                <dd class="card__value">Рыба</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Цена</dt>
-                <dd class="card__value">700 ₽</dd>
-              </div>
-            </dl>
-            <a class="card__button button" href="#">Заказать</a>
-          </li>
+        <li class="catalog__item card">
+          <a class="card__link-image" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/fish-pro-500g@1x.png 1x, images/fish-pro-500g@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/fish-pro-500g-tablet@1x.png 1x, images/fish-pro-500g-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="images/fish-pro-500g-mobile@1x.png" srcset="images/fish-pro-500g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом рыбы 500 грамм">
+            </picture>
+          </a>
+          <a class="card__link-text" href="#">
+            <h3 class="card__title">Cat Energy PRO 500 г</h3>
+          </a>
+          <dl class="card__options">
+            <div class="card__option">
+              <dt>Масса</dt>
+              <dd>500 г</dd>
+            </div>
+            <div class="card__option">
+              <dt>Вкус</dt>
+              <dd>Рыба</dd>
+            </div>
+            <div class="card__option">
+              <dt>Цена</dt>
+              <dd>700 ₽</dd>
+            </div>
+          </dl>
+          <a class="card__button button" href="#">Заказать</a>
+        </li>
 
-          <li class="catalog__item card">
-            <a class="card__link-image" href="#">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="images/fish-pro-1000g@1x.png 1x, images/fish-pro-1000g@2x.png 2x" type="image/png" width="169" height="210">
-                <source media="(min-width: 768px)" srcset="images/fish-pro-1000g-tablet@1x.png 1x, images/fish-pro-1000g-tablet@2x.png 2x" type="image/png" width="200" height="210">
-                <img class="card__image card__image--size-xl" src="images/fish-pro-1000g-mobile@1x.png" srcset="images/fish-pro-1000g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом рыбы 1000 грамм">
-              </picture>
-            </a>
-            <a class="card__link-text" href="#">
-              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
-            </a>
-            <dl class="card__options">
-              <div class="card__option">
-                <dt class="card__key">Масса</dt>
-                <dd class="card__value">1000 г</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Вкус</dt>
-                <dd class="card__value">Рыба</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Цена</dt>
-                <dd class="card__value">1000 ₽</dd>
-              </div>
-            </dl>
-            <a class="card__button button" href="#">Заказать</a>
-          </li>
+        <li class="catalog__item card">
+          <a class="card__link-image" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/fish-pro-1000g@1x.png 1x, images/fish-pro-1000g@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/fish-pro-1000g-tablet@1x.png 1x, images/fish-pro-1000g-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="images/fish-pro-1000g-mobile@1x.png" srcset="images/fish-pro-1000g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом рыбы 1000 грамм">
+            </picture>
+          </a>
+          <a class="card__link-text" href="#">
+            <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+          </a>
+          <dl class="card__options">
+            <div class="card__option">
+              <dt>Масса</dt>
+              <dd>1000 г</dd>
+            </div>
+            <div class="card__option">
+              <dt>Вкус</dt>
+              <dd>Рыба</dd>
+            </div>
+            <div class="card__option">
+              <dt>Цена</dt>
+              <dd>1000 ₽</dd>
+            </div>
+          </dl>
+          <a class="card__button button" href="#">Заказать</a>
+        </li>
 
-          <li class="catalog__item card">
-            <a class="card__link-image" href="#">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="images/grain-pro-500g@1x.png 1x, images/grain-pro-500g@2x.png 2x" type="image/png" width="169" height="210">
-                <source media="(min-width: 768px)" srcset="images/grain-pro-500g-tablet@1x.png 1x, images/grain-pro-500g-tablet@2x.png 2x" type="image/png" width="200" height="210">
-                <img class="card__image" src="images/grain-pro-500g-mobile@1x.png" srcset="images/grain-pro-500g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом гречки 500 грамм">
-              </picture>
-            </a>
-            <a class="card__link-text" href="#">
-              <h3 class="card__title">Cat Energy PRO 500 г</h3>
-            </a>
-            <dl class="card__options">
-              <div class="card__option">
-                <dt class="card__key">Масса</dt>
-                <dd class="card__value">500 г</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Вкус</dt>
-                <dd class="card__value">Гречка</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Цена</dt>
-                <dd class="card__value">400 ₽</dd>
-              </div>
-            </dl>
-            <a class="card__button button" href="#">Заказать</a>
-          </li>
+        <li class="catalog__item card">
+          <a class="card__link-image" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/grain-pro-500g@1x.png 1x, images/grain-pro-500g@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/grain-pro-500g-tablet@1x.png 1x, images/grain-pro-500g-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="images/grain-pro-500g-mobile@1x.png" srcset="images/grain-pro-500g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом гречки 500 грамм">
+            </picture>
+          </a>
+          <a class="card__link-text" href="#">
+            <h3 class="card__title">Cat Energy PRO 500 г</h3>
+          </a>
+          <dl class="card__options">
+            <div class="card__option">
+              <dt>Масса</dt>
+              <dd>500 г</dd>
+            </div>
+            <div class="card__option">
+              <dt>Вкус</dt>
+              <dd>Гречка</dd>
+            </div>
+            <div class="card__option">
+              <dt>Цена</dt>
+              <dd>400 ₽</dd>
+            </div>
+          </dl>
+          <a class="card__button button" href="#">Заказать</a>
+        </li>
 
-          <li class="catalog__item card">
-            <a class="card__link-image" href="#">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="images/grain-pro-1000g@1x.png 1x, images/grain-pro-1000g@2x.png 2x" type="image/png" width="169" height="210">
-                <source media="(min-width: 768px)" srcset="images/grain-pro-1000g-tablet@1x.png 1x, images/grain-pro-1000g-tablet@2x.png 2x" type="image/png" width="200" height="210">
-                <img class="card__image card__image--size-xl" src="images/grain-pro-1000g-mobile@1x.png" srcset="images/grain-pro-1000g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом гречки 1000 грамм">
-              </picture>
-            </a>
-            <a class="card__link-text" href="#">
-              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
-            </a>
-            <dl class="card__options">
-              <div class="card__option">
-                <dt class="card__key">Масса</dt>
-                <dd class="card__value">1000 г</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Вкус</dt>
-                <dd class="card__value">Гречка</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Цена</dt>
-                <dd class="card__value">700 ₽</dd>
-              </div>
-            </dl>
-            <a class="card__button button" href="#">Заказать</a>
-          </li>
+        <li class="catalog__item card">
+          <a class="card__link-image" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/grain-pro-1000g@1x.png 1x, images/grain-pro-1000g@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/grain-pro-1000g-tablet@1x.png 1x, images/grain-pro-1000g-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="images/grain-pro-1000g-mobile@1x.png" srcset="images/grain-pro-1000g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом гречки 1000 грамм">
+            </picture>
+          </a>
+          <a class="card__link-text" href="#">
+            <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+          </a>
+          <dl class="card__options">
+            <div class="card__option">
+              <dt>Масса</dt>
+              <dd>1000 г</dd>
+            </div>
+            <div class="card__option">
+              <dt>Вкус</dt>
+              <dd>Гречка</dd>
+            </div>
+            <div class="card__option">
+              <dt>Цена</dt>
+              <dd>700 ₽</dd>
+            </div>
+          </dl>
+          <a class="card__button button" href="#">Заказать</a>
+        </li>
 
-          <li class="catalog__item card">
-            <a class="card__link-image" href="#">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="images/rice-pro-500g@1x.png 1x, images/rice-pro-500g@2x.png 2x" type="image/png" width="169" height="210">
-                <source media="(min-width: 768px)" srcset="images/rice-pro-500g-tablet@1x.png 1x, images/rice-pro-500g-tablet@2x.png 2x" type="image/png" width="200" height="210">
-                <img class="card__image" src="images/rice-pro-500g-mobile@1x.png" srcset="images/rice-pro-500g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом риса 500 грамм">
-              </picture>
-            </a>
-            <a class="card__link-text" href="#">
-              <h3 class="card__title">Cat Energy PRO 500 г</h3>
-            </a>
-            <dl class="card__options">
-              <div class="card__option">
-                <dt class="card__key">Масса</dt>
-                <dd class="card__value">500 г</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Вкус</dt>
-                <dd class="card__value">Рис</dd>
-              </div>
-              <div class="card__option">
-                <dt class="card__key">Цена</dt>
-                <dd class="card__value">500 ₽</dd>
-              </div>
-            </dl>
-            <a class="card__button button" href="#">Заказать</a>
-          </li>
+        <li class="catalog__item card">
+          <a class="card__link-image" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/rice-pro-500g@1x.png 1x, images/rice-pro-500g@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/rice-pro-500g-tablet@1x.png 1x, images/rice-pro-500g-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="images/rice-pro-500g-mobile@1x.png" srcset="images/rice-pro-500g-mobile@2x.png 2x" width="140" height="107" alt="Банка Cat Energy Pro со вкусом риса 500 грамм">
+            </picture>
+          </a>
+          <a class="card__link-text" href="#">
+            <h3 class="card__title">Cat Energy PRO 500 г</h3>
+          </a>
+          <dl class="card__options">
+            <div class="card__option">
+              <dt>Масса</dt>
+              <dd>500 г</dd>
+            </div>
+            <div class="card__option">
+              <dt>Вкус</dt>
+              <dd>Рис</dd>
+            </div>
+            <div class="card__option">
+              <dt>Цена</dt>
+              <dd>500 ₽</dd>
+            </div>
+          </dl>
+          <a class="card__button button" href="#">Заказать</a>
+        </li>
 
-          <li class="catalog__item card card__more">
-            <h3 class="card__title">Показать еще 100500 товаров</h3>
-            <p class="card__text">На самом деле вкусов гораздо больше!</p>
-            <a class="card__button button button--secondary" href="#">Показать все</a>
-          </li>
-        </ul>
-      </div>
+        <li class="catalog__item card card--more">
+          <h3 class="card__title">Показать еще 100500 товаров</h3>
+          <p class="card__text">На самом деле вкусов гораздо больше!</p>
+          <a class="card__button button button--secondary" href="#">Показать все</a>
+        </li>
+      </ul>
     </section>
 
     <section class="extra">
       <div class="extra__wrapper">
         <h2 class="extra__title">Дополнительные товары</h2>
-        <div class="extra-options__wrapper">
+        <div class="extra__options">
           <ul class="extra__list">
             <li class="extra__item product">
-              <div class="poduct__wrapper">
+              <div class="product__wrapper">
                 <a class="product__link" href="#">
                   <h3 class="product__title">Сахарозаменитель</h3>
                 </a>
                 <dl class="product__options">
-                  <dt class="product__key">1 упаковка (100 г)</dt>
+                  <dt>1 упаковка (100 г)</dt>
                   <dd class="product__value">200 ₽</dd>
                 </dl>
               </div>
@@ -280,13 +277,13 @@
             </li>
 
             <li class="extra__item product">
-              <div class="poduct__wrapper">
+              <div class="product__wrapper">
 
                 <a class="product__link" href="#">
                   <h3 class="product__title">Питьевая вода</h3>
                 </a>
                 <dl class="product__options">
-                  <dt class="product__key">5 литров</dt>
+                  <dt>5 литров</dt>
                   <dd class="product__value">50 ₽</dd>
                 </dl>
               </div>
@@ -294,12 +291,12 @@
             </li>
 
             <li class="extra__item product">
-              <div class="poduct__wrapper">
+              <div class="product__wrapper">
                 <a class="product__link" href="#">
                   <h3 class="product__title">Молоко</h3>
                 </a>
                 <dl class="product__options">
-                  <dt class="product__key">1 литр</dt>
+                  <dt>1 литр</dt>
                   <dd class="product__value">100 ₽</dd>
                 </dl>
               </div>
@@ -307,12 +304,12 @@
             </li>
 
             <li class="extra__item product">
-              <div class="poduct__wrapper">
+              <div class="product__wrapper">
                 <a class="product__link" href="#">
                   <h3 class="product__title">Витамины</h3>
                 </a>
                 <dl class="product__options">
-                  <dt class="product__key">1 упаковка (30 г)</dt>
+                  <dt>1 упаковка (30 г)</dt>
                   <dd class="product__value">300 ₽</dd>
                 </dl>
               </div>
@@ -346,7 +343,7 @@
         <h2 class="welcome__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <p class="welcome__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <div class="welcome__map map">
+      <div class="map">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" type="image/png" width="1440" height="400">
           <source media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png" width="768" height="400">

@@ -10,25 +10,21 @@
   @include flex-box($align-items: normal);
   gap: 20px;
   padding: 40px 20px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px;
     flex-direction: row;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px;
+    max-width: 1220px;
   }
 }
 
 .main-footer__logo {
   align-self: center;
-}
-
-.main-footer__social {
-
-}
-
-.main-footer__copyright {
-
 }

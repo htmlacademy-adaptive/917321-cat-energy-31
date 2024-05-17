@@ -44,10 +44,6 @@
   display: block;
 }
 
-.card__image--size-xl {
-
-}
-
 .card__link-text {
   grid-area: title;
   margin-bottom: 14px;
@@ -96,14 +92,6 @@
   }
 }
 
-.card__key {
-
-}
-
-.card__value {
-
-}
-
 .card__text {
   @include font ($size: 12px, $height: 16px);
   margin: 0;
@@ -132,7 +120,7 @@
   }
 }
 
-.card__more {
+.card--more {
   grid-template-areas:
     "title"
     "options"

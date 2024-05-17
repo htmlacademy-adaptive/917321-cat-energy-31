@@ -24,7 +24,7 @@
         </picture>
         <img class="logo__text" src="images/logo-text.svg" width="101" height="20" alt="Товарный знак компании Cat Energy">
       </a>
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      <button class="main-header__nav-toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
@@ -52,14 +52,17 @@
   <main class="main-container">
     <h1 class="visually-hidden">Cat Energy - правильное питание для вашего котика</h1>
     <section class="hero">
-      <h2 class="hero__title">Функциональное питание для котов</h2>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/cat-energy@1x.png 1x, images/cat-energy@2x.png 2x" type="image/png" width="552" height="499">
-        <source media="(min-width: 768px)" srcset="images/cat-energy-tablet@1x.png 1x, images/cat-energy-tablet@2x.png 2x" type="image/png" width="709" height="609">
-        <img class="hero__image" src="images/cat-energy-mobile@1x.png" srcset="images/cat-energy-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка питания Cat Energy Pro с курицей 500 грамм">
-      </picture>
-      <a class="hero__button button" href="form.html">Подобрать программу</a>
+      <div class="hero__wrapper">
+        <h2 class="hero__title">Функциональное питание для котов</h2>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/cat-energy@1x.png 1x, images/cat-energy@2x.png 2x" type="image/png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="images/cat-energy-tablet@1x.png 1x, images/cat-energy-tablet@2x.png 2x" type="image/png" width="709" height="609">
+          <img class="hero__image" src="images/cat-energy-mobile@1x.png" srcset="images/cat-energy-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка питания Cat Energy Pro с курицей 500 грамм">
+        </picture>
+        <a class="hero__button button" href="form.html">Подобрать программу</a>
+      </div>
+
     </section>
 
     <section class="food-type">
@@ -105,42 +108,45 @@
     </section>
 
     <section class="life-example">
-      <div class="life-example__wrapper wrapper">
-        <h2 class="life-example__title">Живой пример</h2>
-        <p class="life-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="life-example__item-wrapper">
-          <dl class="life-example__list">
-            <div class="life-example__item">
-              <dt class="life-example__number">5 кг</dt>
-              <dd class="life-example__description">снижение веса</dd>
-            </div>
-            <div class="life-example__item">
-              <dt class="life-example__number">60 дней</dt>
-              <dd class="life-example__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="life-example__cost">Затраты на питание: <span class="life-example__cost-value">15 000 РУБ.</span></p>
-        </div>
+      <div class="life-example__container">
+        <div class="life-example__wrapper">
+          <h2 class="life-example__title">Живой пример</h2>
+          <p class="life-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="life-example__item-wrapper">
+            <dl class="life-example__list">
+              <div class="life-example__item">
+                <dt class="life-example__number">5 кг</dt>
+                <dd class="life-example__description">снижение веса</dd>
+              </div>
+              <div class="life-example__item">
+                <dt class="life-example__number">60 дней</dt>
+                <dd class="life-example__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="life-example__cost">Затраты на питание: <span class="life-example__cost-value">15 000 РУБ.</span></p>
+          </div>
 
-      </div>
-      <div class="life-example__contrast contrast slider">
-        <div class="slider__before">
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/fat-cat@1x.png 1x, images/fat-cat@2x.png 2x" type="image/png" width="560" height="512">
-            <img class="slider__image slider__image--fat" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис">
-          </picture>
         </div>
-        <button class="slider__button" type="button">
-          <span class="visually-hidden">Передвинуть ползунок слайдера</span>
-        </button>
-        <div class="slider__after">
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/slim-cat@1x.png 1x, images/slim-cat@2x.png 2x" type="image/png" width="560" height="512">
-            <img class="slider__image slider__image--slim" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис">
-          </picture>
-        </div>
+        <div class="contrast slider">
+          <div class="slider__before">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/fat-cat@1x.png 1x, images/fat-cat@2x.png 2x" type="image/png" width="560" height="512">
+              <img class="slider__image slider__image--fat" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис">
+            </picture>
+          </div>
+          <button class="slider__button" type="button">
+            <span class="visually-hidden">Передвинуть ползунок слайдера</span>
+          </button>
+          <div class="slider__after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/slim-cat@1x.png 1x, images/slim-cat@2x.png 2x" type="image/png" width="560" height="512">
+              <img class="slider__image slider__image--slim" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис">
+            </picture>
+          </div>
 
+        </div>
       </div>
+
     </section>
   </main>
 
@@ -150,7 +156,7 @@
         <h2 class="welcome__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <p class="welcome__adress">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="welcome__adress-city">Санкт-Петербург</span></p>
       </div>
-      <div class="welcome__map map">
+      <div class="map">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" type="image/png" width="1440" height="400">
           <source media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png" width="768" height="400">
@@ -164,7 +170,7 @@
         <img class="logo__text" src="images/logo-text.svg" width="128" height="24" alt="Товарный знак компании Cat Energy в футере">
       </a>
 
-      <ul class="main-footer__social social">
+      <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте</span></a>
@@ -177,7 +183,7 @@
         </li>
       </ul>
 
-      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         HTML Academy
       </a>
 

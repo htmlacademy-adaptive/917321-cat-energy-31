@@ -21,7 +21,7 @@
   }
 }
 
-.poduct__wrapper {
+.product__wrapper {
   @media (min-width: $tablet-width) {
     @include flex-box ($flex-direction: row);
   }
@@ -29,9 +29,6 @@
   @media (min-width: $desktop-width) {
     min-width: 600px;
   }
-}
-
-.product__link {
 }
 
 .product__title {
@@ -67,10 +64,6 @@
   }
 }
 
-.product__key {
-
-}
-
 .product__value {
   margin: 0;
 }
@@ -83,5 +76,6 @@
 
   @media (min-width: $desktop-width) {
     min-width: 244px;
+    padding: 10px;
   }
 }
