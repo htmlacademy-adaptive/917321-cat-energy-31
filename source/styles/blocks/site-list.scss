@@ -9,6 +9,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+
     &--index {
       color: $white-color;
     }
@@ -20,10 +23,19 @@
   border-top: 1px solid $border-color;
   padding: 22px 23px 24px;
   display: block;
+  transition: all 0.8s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     border-top: none;
-    padding: 13px 3px 10px 0;
+    padding: 13px 3px 6px 0;
 
     &--active {
       position: relative;
@@ -38,6 +50,11 @@
       position: absolute;
       bottom: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 

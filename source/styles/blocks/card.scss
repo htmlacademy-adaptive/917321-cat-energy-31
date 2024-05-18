@@ -4,7 +4,7 @@
     "image  title"
     "image  options"
     "button button";
-  padding: 20px 25px;
+  padding: 20px 20px 25px;
   border-bottom: 1px solid #ebebeb;
 
   &:first-child {
@@ -20,7 +20,7 @@
       "button";
     padding: 0 37px 40px;
     gap: 22px;
-    background-image: linear-gradient(to bottom, $white-color 81px, $bg-basic-gray 81px);
+    background-image: linear-gradient(to bottom, $white-color 70px, $bg-basic-gray 70px);
 
     &:first-child {
       border: none;
@@ -29,14 +29,25 @@
 
   @media (min-width: $desktop-width) {
     max-width: 245px;
+    gap: 12px;
   }
 }
 
 .card__link-image {
   grid-area: image;
+  transition: all 0.8s;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -47,9 +58,19 @@
 .card__link-text {
   grid-area: title;
   margin-bottom: 14px;
+  transition: all 0.8s;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -67,6 +88,10 @@
     max-width: 135px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .card__options {
@@ -74,11 +99,17 @@
   grid-area: options;
   margin: 0;
   margin-bottom: 21px;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     font-size: 16px;
     line-height: 20px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -89,6 +120,11 @@
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 5px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
   }
 }
 
@@ -107,11 +143,24 @@
 .card__button {
   grid-area: button;
   justify-self: stretch;
+  transition: all 0.8s;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba($color: $white-color, $alpha: 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 250px;
     font-size: 16px;
     line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,7 +189,7 @@
   @media (min-width: $tablet-width) {
     box-shadow: 0 0 0 2px $bg-basic-gray inset;
     align-self: flex-end;
-    padding-top: 150px;
+    padding-top: 160px;
     background-size: 60px 60px;
     background-position: 50% 50px;
 
@@ -151,7 +200,19 @@
 
     .card__text {
       max-width: 170px;
-      margin-bottom: 60px;
+      margin-bottom: 55px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 153px;
+
+    .card__title {
+      margin-bottom: 15px;
+    }
+
+    .card__text {
+      margin-bottom: 70px;
     }
   }
 }

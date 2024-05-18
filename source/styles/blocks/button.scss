@@ -9,6 +9,7 @@
   border: none;
   cursor: pointer;
   padding: 10px;
+  transition: all 0.8s;
 
 
   &--secondary {
@@ -21,4 +22,9 @@
     line-height: 26px;
     padding: 14px 26px;
   }
+}
+
+.button--secondary.card__button:hover {
+  background-color: $text-base-color;
+  color: $white-color;
 }

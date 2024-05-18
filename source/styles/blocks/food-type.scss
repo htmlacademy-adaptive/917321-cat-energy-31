@@ -4,7 +4,7 @@
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 45px;
+    padding: 0 30px 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +16,7 @@
 .food-type__list {
   @include list-reset();
   @include flex-box ($align-items: normal);
-  gap: 20px;
+  gap: 23px;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
@@ -30,7 +30,7 @@
 
 .food-type__item {
   background-color: $bg-basic-gray;
-  padding: 30px 20px 18px;
+  padding: 30px 20px 20px;
 
   position: relative;
 
@@ -69,7 +69,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 53px;
+    padding: 75px 52px 60px;
 
     &::before {
       width: 200px;
@@ -100,6 +100,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 570px;
+    padding-bottom: 63px;
 
     &::before {
       width: 100px;
@@ -141,11 +142,13 @@
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
+    max-width: 350px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 162px;
     margin-bottom: 73px;
+    max-width: 300px;
   }
 }
 
@@ -153,11 +156,11 @@
   @include font ($size: 14px, $height: 18px);
   border-bottom: 1px solid $border-color;
   margin: 0;
-  margin-bottom: 15px;
-  padding-bottom: 23px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 57px;
     padding-bottom: 0;
     max-width: 340px;
     border-bottom: none;
@@ -167,13 +170,14 @@
 
   @media (min-width: $desktop-width) {
     max-width: 457px;
+    margin-bottom: 35px;
   }
 }
 
 .food-type__link {
   @include font ($family: $secondary-font, $size: 16px, $color: $text-title-color);
   @include flex-box ($flex-direction: row, $justify-content: start);
-  gap: 15px;
+  gap: 20px;
 
   text-transform: uppercase;
   position: relative;
@@ -185,7 +189,7 @@
     width: 32px;
     height: 12px;
     mask-image: url("../../icons/stack.svg#arrow");
-    mask-position: 0, 50%;
+    mask-position: 100%, 50%;
     mask-repeat: no-repeat;
     mask-size: 24px 12px;
     transition: all, 1.3s;

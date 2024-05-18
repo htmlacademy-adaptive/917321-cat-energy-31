@@ -23,15 +23,14 @@
   }
 }
 
-
 .extra__title {
   @include font ($family: $secondary-font, $size: 24px, $color: $text-title-color);
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
   position: relative;
   width: fit-content;
   background: $white-color;
-  box-shadow: -30px 0 0 0 $white-color, 30px 0 0 0 $white-color;
+  box-shadow: -40px 0 0 0 $white-color, 40px 0 0 0 $white-color;
 
   &::before {
     content: "";
@@ -39,7 +38,7 @@
     right: 0;
     width: 100vw;
     height: 2px;
-    top: 50%;
+    top: 35%;
     background-color: $bg-basic-green;
     box-shadow: 100vw 0 0 0 $bg-basic-green;
     z-index: -1;
@@ -60,6 +59,10 @@
       left: -70px;
       top: 50%;
       background-color: $bg-basic-green;
+    }
+
+    &::before {
+      top: 50%;
     }
   }
 
@@ -84,6 +87,6 @@
   @include list-reset ();
 
   @media (min-width: $desktop-width) {
-    min-width: 869px;
+    min-width: 895px;
   }
 }

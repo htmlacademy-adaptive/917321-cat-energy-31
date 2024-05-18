@@ -49,6 +49,10 @@
     line-height: 20px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .welcome__adress-city {
