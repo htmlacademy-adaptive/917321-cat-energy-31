@@ -37,7 +37,7 @@
 .manual__list {
   @include font ($size: 14px, $height: 18px);
   @include list-reset ();
-  @include flex-box ($align-items: normal);
+  @include flex-box ($align-items: stretch);
   gap: 20px;
 
   counter-reset: list;
@@ -47,19 +47,17 @@
     line-height: 24px;
     flex-flow: row wrap;
     gap: 100px 115px;
-    justify-content: start;
+    justify-content: flex-start;
     margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
-    gap: 70px;
-    justify-content: flex-start;
+    gap: 55px 73px;
   }
 }
 
 .manual__item {
-  @include flex-box ($align-items: normal, $flex-direction: row, $justify-content: start);
+  @include flex-box ( $flex-direction: row, $justify-content: flex-start);
   flex-wrap: nowrap;
   gap: 20px;
   position: relative;
@@ -69,8 +67,8 @@
     background-color: $bg-basic-green;
     background-position: 50%;
     background-repeat: no-repeat;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: block;
     flex-shrink: 0;
   }
@@ -111,6 +109,11 @@
     min-height: 215px;
     padding-right: 20px;
 
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
     &::after {
       @include font ($family: $secondary-font, $size: 280px, $color: $bg-basic-gray);
 
@@ -129,7 +132,7 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
-    max-width: 280px;
+    max-width: 250px;
 
     &::after {
       right: 5px;

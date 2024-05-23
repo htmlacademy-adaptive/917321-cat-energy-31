@@ -20,7 +20,7 @@
   min-width: 28px;
   min-height: 22px;
   display: block;
-  transition: all 1.3s;
+  transition: background-color 0.3s;
 
   &::before {
     content: "";
@@ -28,7 +28,7 @@
     width: 28px;
     height: 22px;
     background-color: #666666;
-    transition: all, 1.3s;
+    transition: background-color, 0.3s;
     mask-size: 28px 22px;
     mask-repeat: no-repeat;
     mask-position: 50%;

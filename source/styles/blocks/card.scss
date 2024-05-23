@@ -35,7 +35,7 @@
 
 .card__link-image {
   grid-area: image;
-  transition: all 0.8s;
+  transition: opacity 0.3s;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -58,7 +58,7 @@
 .card__link-text {
   grid-area: title;
   margin-bottom: 14px;
-  transition: all 0.8s;
+  transition: opacity 0.3s;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -143,7 +143,7 @@
 .card__button {
   grid-area: button;
   justify-self: stretch;
-  transition: all 0.8s;
+  transition: background-color 0.3s;
 
   &:hover {
     background-color: #5eaa2f;

@@ -22,29 +22,32 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 105px 100px 184px;
-    background-image: linear-gradient(90deg, $white-color 50%, $bg-opacity-green 50%);
-    background-size: cover;
-    background-position: 0;
+    padding: 108px 190px 184px;
+    position: static;
 
-
-    &::before {
-      content: "";
-      display: block;
-      width: 50%;
-      height: 695px;
-      background-image:
-        image-set(
-          url("../../images/index-background-desktop@2x.webp") type("image/webp") 2x,
-          url("../../images/index-background-desktop@1x.webp") type("image/webp") 1x,
-          url("../../images/index-background-desktop@2x.png") type("image/png") 2x,
-          url("../../images/index-background-desktop@1x.png") type("image/png") 1x
-        );
-      background-repeat: no-repeat;
-      position: absolute;
-      bottom: -1;
-      right: 0;
-      z-index: -1;
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 695px;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image:
+          linear-gradient(90deg, $bg-opacity-green 50% 50%),
+          image-set(
+            url("../../images/index-background-desktop@2x.webp") type("image/webp") 2x,
+            url("../../images/index-background-desktop@1x.webp") type("image/webp") 1x,
+            url("../../images/index-background-desktop@2x.png") type("image/png") 2x,
+            url("../../images/index-background-desktop@1x.png") type("image/png") 1x
+          ),
+          linear-gradient(#413e44, #413e44 50%);
+        background-repeat: no-repeat;
+        background-position: 50%, 0 100%, 50%;
+        background-size: cover, auto 694px, cover;
+      }
     }
   }
 }
@@ -81,8 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
-    margin-bottom: 42px;
+    margin: 0 0 40px;
   }
 }
 
@@ -103,7 +105,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin: 0;
     margin-bottom: 52px;
     max-width: 500px;
   }
@@ -118,16 +120,16 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 46%;
-    right: 39%;
-    transform: translate(42%, 43%);
+    top: 13%;
+    left: 63%;
+    transform: translate(-64%, 13%);
   }
 }
 
 .hero__button {
   width: 280px;
   margin: 0 auto;
-  transition: all 0.8s;
+  transition: color, background-color, 0.3s;
 
   &:hover {
     background-color: #5eaa2f;
@@ -148,7 +150,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    margin-left: 80px;
+    margin: 0;
     left: 0;
     top: 0;
   }

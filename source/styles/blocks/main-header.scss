@@ -17,7 +17,6 @@
   &--index {
     @media (min-width: $desktop-width) {
       z-index: 1;
-      background-image: linear-gradient(90deg, $white-color 50%, $bg-opacity-green 50%);
       max-width: none;
       padding-left: 110px;
       padding-right: 110px;

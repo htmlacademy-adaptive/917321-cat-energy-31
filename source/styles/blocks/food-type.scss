@@ -181,7 +181,7 @@
 
   text-transform: uppercase;
   position: relative;
-  transition: all, 1.3s;
+  transition: mask-size, opacity, 0.3s;
 
   &::after {
     content: "";
@@ -189,10 +189,10 @@
     width: 32px;
     height: 12px;
     mask-image: url("../../icons/stack.svg#arrow");
-    mask-position: 100%, 50%;
+    mask-position: 0, 50%;
     mask-repeat: no-repeat;
     mask-size: 24px 12px;
-    transition: all, 1.3s;
+    transition: mask-size, opacity, 0.3s;
   }
 
   &:hover::after,
@@ -207,5 +207,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    gap: 30px;
   }
 }

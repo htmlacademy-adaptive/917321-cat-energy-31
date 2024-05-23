@@ -20,7 +20,7 @@
   text-transform: uppercase;
   padding: 12px;
   border: 1px solid #e7e7e7;
-  transition: all 0.8s;
+  transition: border-color, border 0.3s;
 
   &:hover {
     border-color: #cdcdcd;
@@ -30,7 +30,7 @@
     border: 2px solid $text-base-color;
   }
 
-  &:invalid {
+  &:user-invalid {
     border: 2px solid #ff8282;
   }
 

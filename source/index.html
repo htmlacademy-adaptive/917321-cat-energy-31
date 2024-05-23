@@ -9,6 +9,11 @@
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/favicon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+
+  <link rel="preload" href="styles/styles.css" as="style">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -20,9 +25,9 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo.svg" type="image/svg+xml" width="70" height="59">
           <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании Cat Energy">
+          <img class="logo__image" loading="lazy" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании Cat Energy">
         </picture>
-        <img class="logo__text" src="images/logo-text.svg" width="101" height="20" alt="Товарный знак компании Cat Energy">
+        <img class="logo__text" loading="lazy" src="images/logo-text.svg" width="101" height="20" alt="Товарный знак компании Cat Energy">
       </a>
       <button class="main-header__nav-toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -56,9 +61,12 @@
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <picture>
+          <source media="(min-width: 1440px)" srcset="images/cat-energy@1x.webp 1x, images/cat-energy@2x.webp 2x" type="image/webp" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="images/cat-energy-tablet@1x.webp 1x, images/cat-energy-tablet@2x.webp 2x" type="image/webp" width="709" height="609">
+          <source srcset="images/cat-energy-mobile@1x.webp 1x, images/cat-energy-mobile@2webp 2x" type="image/webp" width="280" height="270">
           <source media="(min-width: 1440px)" srcset="images/cat-energy@1x.png 1x, images/cat-energy@2x.png 2x" type="image/png" width="552" height="499">
           <source media="(min-width: 768px)" srcset="images/cat-energy-tablet@1x.png 1x, images/cat-energy-tablet@2x.png 2x" type="image/png" width="709" height="609">
-          <img class="hero__image" src="images/cat-energy-mobile@1x.png" srcset="images/cat-energy-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка питания Cat Energy Pro с курицей 500 грамм">
+          <img class="hero__image" loading="lazy" src="images/cat-energy-mobile@1x.png" srcset="images/cat-energy-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка питания Cat Energy Pro с курицей 500 грамм">
         </picture>
         <a class="hero__button button" href="form.html">Подобрать программу</a>
       </div>
@@ -130,8 +138,10 @@
         <div class="contrast slider">
           <div class="slider__before">
             <picture>
+              <source media="(min-width: 768px)" srcset="images/fat-cat@1x.webp 1x, images/fat-cat@2x.webp 2x" type="image/webp" width="560" height="512">
+              <source srcset="images/fat-cat-mobile@1x.webp 1x, images/fat-cat-mobile@2x.webp 2x" type="image/webp" width="280" height="256">
               <source media="(min-width: 768px)" srcset="images/fat-cat@1x.png 1x, images/fat-cat@2x.png 2x" type="image/png" width="560" height="512">
-              <img class="slider__image slider__image--fat" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис">
+              <img class="slider__image slider__image--fat" loading="lazy" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис">
             </picture>
           </div>
           <button class="slider__button" type="button">
@@ -139,8 +149,10 @@
           </button>
           <div class="slider__after">
             <picture>
+              <source media="(min-width: 768px)" srcset="images/slim-cat@1x.webp 1x, images/slim-cat@2x.webp 2x" type="image/webp" width="560" height="512">
+              <source srcset="images/slim-cat-mobile@1x.webp 1x, images/slim-cat-mobile@2x.webp 2x" type="image/webp" width="280" height="256">
               <source media="(min-width: 768px)" srcset="images/slim-cat@1x.png 1x, images/slim-cat@2x.png 2x" type="image/png" width="560" height="512">
-              <img class="slider__image slider__image--slim" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис">
+              <img class="slider__image slider__image--slim" loading="lazy" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис">
             </picture>
           </div>
 
@@ -163,7 +175,7 @@
 
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="#" aria-current="page">
-        <img class="logo__text" src="images/logo-text.svg" width="128" height="24" alt="Товарный знак компании Cat Energy в футере">
+        <img class="logo__text" loading="lazy" src="images/logo-text.svg" width="128" height="24" alt="Товарный знак компании Cat Energy в футере">
       </a>
 
       <ul class="social">
@@ -185,7 +197,6 @@
 
     </div>
   </footer>
-  <script src="script.js"></script>
 </body>
 
 </html>

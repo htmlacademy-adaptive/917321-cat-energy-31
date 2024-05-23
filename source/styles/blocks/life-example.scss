@@ -72,17 +72,20 @@
   @media (min-width: $tablet-width) {
     @include flex-box ($flex-direction: row);
     margin-bottom: 100px;
+    gap: 10px;
+    flex-wrap: nowrap;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     gap: 60px;
+    flex-wrap: wrap;
   }
 }
 
 .life-example__list {
   @include font ($size: 14px, $height: 18px);
-  @include flex-box ($flex-direction: row, $justify-content: center);
+  @include flex-box ($align-items: flex-start, $flex-direction: row, $justify-content: center);
   flex-wrap: nowrap;
   gap: 32px;
   margin: 0;
@@ -90,7 +93,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-
+    justify-content: flex-start;
     gap: 43px;
     margin-bottom: 0;
   }
@@ -106,6 +109,7 @@
   @media (min-width: $tablet-width) {
     padding: 15px 23px 12px;
     min-width: 162px;
+    max-width: 25%;
   }
 }
 
@@ -141,7 +145,7 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $white-color;
-    text-wrap: nowrap;
+    padding: 0 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -161,12 +165,14 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
-    margin: 0;
+    margin: 0 0 0 auto;
+    flex-shrink: 0;
   }
 
   @media (min-width: $desktop-width) {
     @include flex-box($flex-direction: row);
     gap: 66px;
+    margin: 0;
   }
 }
 
