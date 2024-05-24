@@ -9,7 +9,6 @@
   @include flex-box($flex-direction: row);
   flex-wrap: nowrap;
   gap: 15px;
-
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
@@ -30,7 +29,6 @@
 
 .welcome__title {
   @include font ($family: $secondary-font, $size: 16px, $height: 20px, $color: #111111);
-
   text-transform: uppercase;
   margin: 0;
 

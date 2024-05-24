@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--nojs">
+  <header class="main-header main-header--nojs" data-test="header">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="index.html">
         <picture>
@@ -50,7 +50,7 @@
   </header>
 
   <main class="main-container main-container--catalog">
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <h1 class="catalog__heading">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item card">
@@ -278,7 +278,7 @@
       </ul>
     </section>
 
-    <section class="extra">
+    <section class="extra" data-test="additional">
       <div class="extra__wrapper">
         <h2 class="extra__title">Дополнительные товары</h2>
         <div class="extra__options">
@@ -359,17 +359,17 @@
   </main>
 
   <footer class="main-footer">
-    <section class="main-footer__welcome welcome welcome--catalog">
+    <section class="main-footer__welcome welcome welcome--catalog" data-test="contacts">
       <div class="welcome__wrapper">
         <h2 class="welcome__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <p class="welcome__adress">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="welcome__adress-city">Санкт-Петербург</span></p>
       </div>
       <div class="map">
-        <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198316!2d30.32047247752951!3d59.93871916209334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716041414394!5m2!1sru!2sru" width="320" height="362" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Адрес на карте ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
+        <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198316!2d30.32047247752951!3d59.93871916209334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716041414394!5m2!1sru!2sru" width="320" height="362" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Адрес на карте ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
       </div>
     </section>
 
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper" data-test="footer">
       <a class="main-footer__logo logo" href="index.html">
         <img class="logo__text" loading="lazy" src="images/logo-text.svg" width="128" height="24" alt="Товарный знак компании Cat Energy в футере">
       </a>

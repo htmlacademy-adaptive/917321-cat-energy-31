@@ -45,7 +45,6 @@
   display: block;
   transition: background-color, border-color, 0.3s;
 
-
   &::before {
     content: "";
     background-color: $white-color;
