@@ -9,8 +9,12 @@
 }
 
 .catalog__item {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 245px;
+    width: 245px;
     gap: 12px;
   }
 }
@@ -44,15 +48,5 @@
     gap: 74px 80px;
     max-width: 1220px;
     margin: 0 auto;
-  }
-}
-
-.catalog__item {
-  @media (min-width: $tablet-width) {
-    width: 324px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
   }
 }

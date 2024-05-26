@@ -11,3 +11,20 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
+
+.page__header {
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    @include flex-box ($flex-direction: row);
+    padding: 22px 30px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 51px 0 0;
+  }
+}
