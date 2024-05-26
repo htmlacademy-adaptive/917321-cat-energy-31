@@ -1,4 +1,4 @@
-.main-header {
+.main-header__container {
   min-width: 320px;
 
   @media (min-width: $tablet-width) {
@@ -17,7 +17,7 @@
   &--index {
     @media (min-width: $desktop-width) {
       z-index: 1;
-      max-width: none;
+      max-width: 1440px;
       padding-left: 110px;
       padding-right: 110px;
     }
@@ -30,6 +30,15 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+}
+
+.main-header__nav {
+  background-color: $white-color;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: contents;
   }
 }
 

@@ -1,13 +1,6 @@
 .main-nav {
-  background-color: $white-color;
-  width: 100%;
-
   &--opened {
     position: absolute;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: contents;
   }
 }
 

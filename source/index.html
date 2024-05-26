@@ -17,7 +17,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--nojs main-header--index" data-test="header">
+  <header class="main-header main-header__container main-header--nojs main-header--index" data-test="header">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="#" aria-current="page">
         <picture>
@@ -31,7 +31,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
       <ul class="main-nav__list site-list site-list--index">
         <li class="site-list__item">
           <a class="site-list__link site-list__link--active" href="#" aria-current="page">
@@ -58,14 +58,17 @@
       <div class="hero__wrapper">
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/cat-energy@1x.webp 1x, images/cat-energy@2x.webp 2x" type="image/webp" width="552" height="499">
-          <source media="(min-width: 768px)" srcset="images/cat-energy-tablet@1x.webp 1x, images/cat-energy-tablet@2x.webp 2x" type="image/webp" width="709" height="609">
-          <source srcset="images/cat-energy-mobile@1x.webp 1x, images/cat-energy-mobile@2x.webp 2x" type="image/webp" width="280" height="270">
-          <source media="(min-width: 1440px)" srcset="images/cat-energy@1x.png 1x, images/cat-energy@2x.png 2x" type="image/png" width="552" height="499">
-          <source media="(min-width: 768px)" srcset="images/cat-energy-tablet@1x.png 1x, images/cat-energy-tablet@2x.png 2x" type="image/png" width="709" height="609">
-          <img class="hero__image" loading="lazy" src="images/cat-energy-mobile@1x.png" srcset="images/cat-energy-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка питания Cat Energy Pro с курицей 500 грамм">
-        </picture>
+        <div class="hero__image-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/cat-energy@1x.webp 1x, images/cat-energy@2x.webp 2x" type="image/webp" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="images/cat-energy-tablet@1x.webp 1x, images/cat-energy-tablet@2x.webp 2x" type="image/webp" width="709" height="609">
+            <source srcset="images/cat-energy-mobile@1x.webp 1x, images/cat-energy-mobile@2x.webp 2x" type="image/webp" width="280" height="270">
+            <source media="(min-width: 1440px)" srcset="images/cat-energy@1x.png 1x, images/cat-energy@2x.png 2x" type="image/png" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="images/cat-energy-tablet@1x.png 1x, images/cat-energy-tablet@2x.png 2x" type="image/png" width="709" height="609">
+            <img class="hero__image" loading="lazy" src="images/cat-energy-mobile@1x.png" srcset="images/cat-energy-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка питания Cat Energy Pro с курицей 500 грамм">
+          </picture>
+        </div>
+
         <a class="hero__button button" href="form.html">Подобрать программу</a>
       </div>
 
@@ -132,7 +135,7 @@
             <p class="life-example__cost">Затраты на питание: <span class="life-example__cost-value">15 000 РУБ.</span></p>
           </div>
         </div>
-        <div class="contrast slider">
+        <div class="life-example__slider slider">
           <div class="slider__before">
             <picture>
               <source media="(min-width: 768px)" srcset="images/fat-cat@1x.webp 1x, images/fat-cat@2x.webp 2x" type="image/webp" width="560" height="512">
@@ -163,7 +166,7 @@
         <h2 class="welcome__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <p class="welcome__adress">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="welcome__adress-city">Санкт-Петербург</span></p>
       </div>
-      <div class="map">
+      <div class="welcome__map map">
         <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198316!2d30.32047247752951!3d59.93871916209334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716041414394!5m2!1sru!2sru" width="320" height="362" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Адрес на карте ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
       </div>
     </section>
@@ -173,7 +176,7 @@
         <img class="logo__text" loading="lazy" src="images/logo-text.svg" width="128" height="24" alt="Товарный знак компании Cat Energy в футере">
       </a>
 
-      <ul class="social">
+      <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте</span></a>

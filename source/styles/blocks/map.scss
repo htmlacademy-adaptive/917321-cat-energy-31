@@ -8,7 +8,6 @@
     );
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 362px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -19,7 +18,6 @@
         url("../../images/map-tablet@@2x.png") type("image/png") 2x,
         url("../../images/map-tablet@@1x.png") type("image/png") 1x
       );
-    min-height: 400px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,6 +37,6 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    height: 400px;
+    min-height: 400px;
   }
 }

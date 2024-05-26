@@ -14,7 +14,7 @@
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
+    padding: 57px 30px;
     flex-direction: row;
     max-width: 768px;
   }
@@ -27,4 +27,20 @@
 
 .main-footer__logo {
   align-self: center;
+  width: 128px;
+}
+
+.main-footer__social {
+  @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    max-width: 150px;
+    margin-left: 35px;
+  }
+}
+
+.main-footer__copyright {
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+  }
 }

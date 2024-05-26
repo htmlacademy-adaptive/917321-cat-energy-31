@@ -74,3 +74,19 @@
     max-width: none;
   }
 }
+
+.subscribe__form {
+  @include flex-box ($align-items: normal);
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row nowrap;
+    gap: 0;
+    max-width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
+  }
+}

@@ -1,4 +1,10 @@
 .welcome {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: calc(100% - 1330px) 565px auto;
+    grid-template-rows: 95px auto auto;
+  }
+
   &--catalog {
     background-color: $bg-basic-gray;
   }
@@ -17,10 +23,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    grid-area: 2/2/3/3;
+    z-index: 2;
     background-color: $white-color;
-    top: 95px;
-    left: 110px;
+
     max-width: 565px;
     padding: 60px 78px 60px 80px;
     gap: 87px;
@@ -57,5 +63,17 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin-top: 18px;
+  }
+}
+
+.welcome__map {
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1/1/4/4;
   }
 }

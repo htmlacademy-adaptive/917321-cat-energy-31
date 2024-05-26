@@ -17,7 +17,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--nojs" data-test="header">
+  <header class="main-header main-header__container main-header--nojs" data-test="header">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="index.html">
         <picture>
@@ -31,7 +31,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">
@@ -192,7 +192,7 @@
             </picture>
           </a>
           <a class="card__link-text" href="#">
-            <h3 class="card__title">Cat Energy PRO 500 г</h3>
+            <h3 class="card__title">Cat Energy SLIM 500 г</h3>
           </a>
           <dl class="card__options">
             <div class="card__option">
@@ -223,7 +223,7 @@
             </picture>
           </a>
           <a class="card__link-text" href="#">
-            <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+            <h3 class="card__title">Cat Energy SLIM 1000 г</h3>
           </a>
           <dl class="card__options">
             <div class="card__option">
@@ -254,7 +254,7 @@
             </picture>
           </a>
           <a class="card__link-text" href="#">
-            <h3 class="card__title">Cat Energy PRO 500 г</h3>
+            <h3 class="card__title">Cat Energy SLIM 500 г</h3>
           </a>
           <dl class="card__options">
             <div class="card__option">
@@ -292,7 +292,7 @@
                   <h3 class="product__title">Сахарозаменитель</h3>
                 </a>
                 <dl class="product__options">
-                  <dt>1 упаковка (100 г)</dt>
+                  <dt class="product__description">1 упаковка (100 г)</dt>
                   <dd class="product__value">200 ₽</dd>
                 </dl>
               </div>
@@ -307,7 +307,7 @@
                   <h3 class="product__title">Питьевая вода</h3>
                 </a>
                 <dl class="product__options">
-                  <dt>5 литров</dt>
+                  <dt class="product__description">5 литров</dt>
                   <dd class="product__value">50 ₽</dd>
                 </dl>
               </div>
@@ -320,7 +320,7 @@
                   <h3 class="product__title">Молоко</h3>
                 </a>
                 <dl class="product__options">
-                  <dt>1 литр</dt>
+                  <dt class="product__description">1 литр</dt>
                   <dd class="product__value">100 ₽</dd>
                 </dl>
               </div>
@@ -333,7 +333,7 @@
                   <h3 class="product__title">Витамины</h3>
                 </a>
                 <dl class="product__options">
-                  <dt>1 упаковка (30 г)</dt>
+                  <dt class="product__description">1 упаковка (30 г)</dt>
                   <dd class="product__value">300 ₽</dd>
                 </dl>
               </div>
@@ -367,7 +367,7 @@
         <h2 class="welcome__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <p class="welcome__adress">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="welcome__adress-city">Санкт-Петербург</span></p>
       </div>
-      <div class="map">
+      <div class="welcome__map map">
         <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198316!2d30.32047247752951!3d59.93871916209334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716041414394!5m2!1sru!2sru" width="320" height="362" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Адрес на карте ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
       </div>
     </section>
