@@ -75,7 +75,7 @@
 
 .extra__options {
   @media (min-width: $desktop-width) {
-    @include flex-box($flex-direction:row);
+    @include flex-box($flex-direction:row, $align-items: flex-start);
     gap: 80px;
     flex-wrap: nowrap;
     max-width: 1220px;
@@ -170,5 +170,6 @@
       );
     padding: 56px 42px 43px;
     max-width: 245px;
+    background-position: top, top;
   }
 }

@@ -1,7 +1,7 @@
 .welcome {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: calc(100% - 1330px) 565px auto;
+    grid-template-columns: auto 565px 90px 565px auto;
     grid-template-rows: 95px auto auto;
   }
 
@@ -74,6 +74,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: 1/1/4/4;
+    grid-area: 1/1/-1/-1;
   }
 }
