@@ -4,7 +4,8 @@
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 48px;
+    padding: 0 0 48px;
+    max-width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,11 +21,14 @@
 
   @media (min-width: $tablet-width) {
     gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
+    padding: 0;
   }
 }
 

@@ -16,7 +16,7 @@
   @media (min-width: $tablet-width) {
     padding: 57px 30px;
     flex-direction: row;
-    max-width: 768px;
+    max-width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {

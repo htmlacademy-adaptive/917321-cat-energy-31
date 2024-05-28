@@ -11,7 +11,7 @@
 
   @media (min-width: $tablet-width) {
     @include flex-box ($flex-direction:row);
-    gap: 10px 32px;
+    gap: 10px 30px;
     justify-content: flex-start;
   }
 

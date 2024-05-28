@@ -69,7 +69,7 @@
   }
 
   &:focus::after {
-    background-color: #0000ff;
+    background-color: $bg-basic-green;
   }
 
   &:active,

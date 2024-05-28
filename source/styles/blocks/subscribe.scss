@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 110px 104px;
+    padding: 30px 0 104px;
   }
 }
 
@@ -15,11 +15,11 @@
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
+    max-width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1220px;
+    max-width: 1220px;
   }
 }
 

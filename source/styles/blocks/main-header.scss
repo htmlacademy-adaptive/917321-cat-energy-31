@@ -2,9 +2,6 @@
   &--index {
     @media (min-width: $desktop-width) {
       z-index: 1;
-      max-width: 1440px;
-      padding-left: 110px;
-      padding-right: 110px;
     }
   }
 }
