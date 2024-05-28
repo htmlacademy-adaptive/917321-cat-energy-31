@@ -1,0 +1,211 @@
+.life-example {
+  background-color: $bg-basic-gray;
+  padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $white-color 58%, #eaeaea 42%);
+    padding: 45px 30px 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $white-color 32%, $bg-basic-gray 30%);
+    padding: 77px 0 75px;
+
+    @include flex-box($flex-direction: row);
+  }
+}
+
+.life-example__container {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    width: 1220px;
+
+    @include flex-box ($flex-direction:row);
+  }
+}
+
+.life-example__wrapper {
+  min-width: 280px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+  }
+}
+
+.life-example__title {
+  @include font ($family: $secondary-font, $size: 36px, $height: 40px, $color: $text-title-color);
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.life-example__text {
+  @include font ($size: 14px, $height: 18px);
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.life-example__item-wrapper {
+  @media (min-width: $tablet-width) {
+    @include flex-box ($flex-direction: row);
+    margin-bottom: 100px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    align-items: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+}
+
+.life-example__list {
+  @include font ($size: 14px, $height: 18px);
+  @include flex-box ($align-items: flex-start, $flex-direction: row, $justify-content: center);
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 43px;
+    margin-bottom: 0;
+  }
+}
+
+.life-example__item {
+  padding: 14px 14px 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  position: relative;
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 23px 12px;
+    min-width: 162px;
+    max-width: 25%;
+  }
+}
+
+.life-example__item:last-child {
+  @media (min-width: $tablet-width) {
+    padding: 15px 7px 12px;
+  }
+}
+
+.life-example__number {
+  @include font ($family: $secondary-font, $size: 24px, $color: $text-title-color);
+
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: -8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.life-example__description {
+  @include font ($size: 12px);
+  margin: 0;
+  display: block;
+  background-color: $bg-basic-gray;
+  text-align: center;
+  padding: 0 10px;
+  transform: translateY(16px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white-color;
+    padding: 0 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-basic-gray;
+  }
+}
+
+.life-example__cost {
+  @include font ($family: $secondary-font, $size: 14px, $height: 20px, $color: $text-title-color);
+
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    margin: 11px 0 0 auto;
+    flex-basis: 45%;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex-box($flex-direction: row);
+    gap: 10px 66px;
+    margin: 0;
+    flex-basis: auto;
+  }
+}
+
+.life-example__cost-value {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.life-example__slider {
+  position: relative;
+  max-width: 280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}

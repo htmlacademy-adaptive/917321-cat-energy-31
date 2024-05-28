@@ -1,0 +1,54 @@
+.social {
+  @include flex-box ($flex-direction: row, $justify-content: center);
+  gap: 24px;
+  padding: 20px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.social__link {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-width: 28px;
+  min-height: 22px;
+  display: block;
+  transition: background-color 0.3s;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-color: #666666;
+    transition: background-color, 0.3s;
+    mask-size: 28px 22px;
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+  }
+
+  &--vkontakte::before {
+    mask-image: url("../../icons/stack.svg#icon-vkontakte");
+  }
+
+  &--youtube::before {
+    mask-image: url("../../icons/stack.svg#icon-youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../../icons/stack.svg#icon-telegram");
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $bg-basic-green;
+  }
+
+  &:active::before {
+    background-color: rgba(104, 183, 56, 0.3);
+  }
+}

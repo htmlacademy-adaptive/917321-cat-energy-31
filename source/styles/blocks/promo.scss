@@ -1,0 +1,39 @@
+.promo__text {
+  @include font ($size: 16px, $height: 20px, $color: $white-color);
+  @include flex-box();
+  gap: 47px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon-gift");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row nowrap;
+    gap: 240px;
+    text-align: left;
+
+    &::before {
+      flex-basis: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 46px;
+    text-align: center;
+
+    &::before {
+      flex-basis: auto;
+      height: 83px;
+    }
+  }
+}

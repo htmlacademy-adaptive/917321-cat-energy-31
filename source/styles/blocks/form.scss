@@ -1,0 +1,53 @@
+.form__field {
+  @include font ($family: $secondary-font, $size: 20px);
+
+  text-transform: uppercase;
+  padding: 12px;
+  border: 1px solid #e7e7e7;
+  transition: border-color, border 0.3s;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid $text-base-color;
+  }
+
+  &:user-invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &::placeholder {
+    color: $text-base-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+.form__button {
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+  padding: 15px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba($color: $white-color, $alpha: 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+  }
+}

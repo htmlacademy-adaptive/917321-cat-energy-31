@@ -1,0 +1,175 @@
+.extra {
+  padding: 25px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 74px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0;
+  }
+}
+
+.extra__wrapper {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}
+
+.extra__title {
+  @include font ($family: $secondary-font, $size: 24px, $color: $text-title-color);
+  margin: 0;
+  margin-bottom: 33px;
+  position: relative;
+  width: fit-content;
+  background: $white-color;
+  box-shadow: -40px 0 0 0 $white-color, 40px 0 0 0 $white-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    top: 35%;
+    background-color: $bg-basic-green;
+    box-shadow: 100vw 0 0 0 $bg-basic-green;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+
+    &::after {
+      content: "";
+      width: 30px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      left: -70px;
+      top: 50%;
+      background-color: $bg-basic-green;
+    }
+
+    &::before {
+      top: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 80px;
+  }
+}
+
+.extra__options {
+  @media (min-width: $desktop-width) {
+    @include flex-box($flex-direction:row, $align-items: flex-start);
+    gap: 80px;
+    flex-wrap: nowrap;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.extra__list {
+  @include list-reset ();
+
+  @media (min-width: $desktop-width) {
+    min-width: 895px;
+  }
+}
+
+.extra__item {
+  @include flex-box($align-items: normal);
+  border-bottom: 1px solid #cdcdcd;
+  padding: 13px 0 18px;
+  margin-bottom: 0;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  &:last-child {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 38px 28px;
+    gap: 13px;
+    margin: 0;
+    border-right: 1px solid#cdcdcd;
+    border-left: 1px solid#cdcdcd;
+
+    &:last-child {
+      margin-bottom: 66px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 40px;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.extra__promo {
+  background-color: $bg-basic-green;
+  background-image:
+    linear-gradient($bg-opacity-green, $bg-opacity-green),
+    image-set(
+      url("../../images/cat-in-bag-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/cat-in-bag-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/cat-in-bag-mobile@2x.png") type("image/png") 2x,
+      url("../../images/cat-in-bag-mobile@21x.png") type("image/png") 1x
+    );
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  background-position: 50%;
+  padding: 60px 59px 43px;
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      linear-gradient($bg-opacity-green, $bg-opacity-green),
+      image-set(
+        url("../../images/cat-in-bag-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-in-bag-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-in-bag-tablet@2x.png") type("image/png") 2x,
+        url("../../images/cat-in-bag-tablet@21x.png") type("image/png") 1x
+      ),
+      linear-gradient(90deg, #4e4e53, #434247 50%);
+    padding: 60px 110px 60px 60px;
+    background-position: 50% 0, 0 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient($bg-opacity-green, $bg-opacity-green),
+      image-set(
+        url("../../images/cat-in-bag-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-in-bag-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-in-bag-desktop@2x.png") type("image/png") 2x,
+        url("../../images/cat-in-bag-desktop@21x.png") type("image/png") 1x
+      );
+    padding: 56px 42px 43px;
+    max-width: 245px;
+    background-position: top, top;
+  }
+}

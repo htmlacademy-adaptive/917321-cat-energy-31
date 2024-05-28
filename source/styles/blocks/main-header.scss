@@ -1,0 +1,80 @@
+.main-header {
+  &--index {
+    @media (min-width: $desktop-width) {
+      z-index: 1;
+    }
+  }
+}
+
+.main-header__wrapper {
+  @include flex-box ($flex-direction: row);
+  padding: 12px 20px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-header__nav {
+  background-color: $white-color;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: contents;
+  }
+}
+
+.main-header__logo {
+  gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    gap: 14px;
+  }
+}
+
+.main-header__nav-toggle {
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#menu-burger");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+  min-width: 24px;
+  min-height: 24px;
+  cursor: pointer;
+
+  &--close {
+    display: block;
+    background-image: url("../../icons/stack.svg#cross-for-close-mob-menu");
+  }
+
+  &--open {
+    display: block;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-header--nojs .main-nav__list {
+    display: block;
+  }
+
+  .main-header--nojs .main-header__nav-toggle {
+    display: none;
+  }
+}

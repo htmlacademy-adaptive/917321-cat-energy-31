@@ -1,0 +1,81 @@
+.welcome {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 565px 90px 565px auto;
+    grid-template-rows: 95px auto auto;
+  }
+
+  &--catalog {
+    background-color: $bg-basic-gray;
+  }
+  position: relative;
+}
+
+.welcome__wrapper {
+  @include flex-box($flex-direction: row);
+  flex-wrap: nowrap;
+  gap: 15px;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    gap: 308px;
+    max-width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 2/2/3/3;
+    z-index: 2;
+    background-color: $white-color;
+
+    max-width: 565px;
+    padding: 60px 78px 60px 80px;
+    gap: 87px;
+  }
+}
+
+.welcome__title {
+  @include font ($family: $secondary-font, $size: 16px, $height: 20px, $color: #111111);
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.welcome__adress {
+  @include font ($size: 14px, $height: 20px);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.welcome__adress-city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 18px;
+  }
+}
+
+.welcome__map {
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1/1/-1/-1;
+  }
+}

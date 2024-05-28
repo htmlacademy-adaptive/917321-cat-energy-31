@@ -1,0 +1,28 @@
+.main-container {
+  &--catalog {
+    padding-top: 27px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      padding-top: 45px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--catalog {
+      padding-top: 74px;
+    }
+  }
+}
+
+.main-container__catalog {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}

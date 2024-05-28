@@ -1,0 +1,224 @@
+.card {
+  display: grid;
+  grid-template-areas:
+    "image  title"
+    "image  options"
+    "button button";
+  padding: 20px 20px 25px;
+  border-bottom: 1px solid #ebebeb;
+
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    grid-template-areas:
+      "image"
+      "title"
+      "options"
+      "button";
+    padding: 0 37px 40px;
+    gap: 22px;
+    background-image: linear-gradient(to bottom, $white-color 70px, $bg-basic-gray 70px);
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 11px;
+  }
+}
+
+.card__link-image {
+  grid-area: image;
+  transition: opacity 0.3s;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.card__image {
+  display: block;
+}
+
+.card__link-text {
+  grid-area: title;
+  margin-bottom: 14px;
+  transition: opacity 0.3s;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.card__title {
+  @include font ($family: $secondary-font, $size: 16px, $height: 20px, $color: $text-secondary-color);
+
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 80px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 135px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.card__options {
+  @include font ($size: 12px, $height: 16px);
+  grid-area: options;
+  margin: 0;
+  margin-bottom: 21px;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.card__option {
+  @include flex-box ($flex-direction:row);
+  flex-wrap: nowrap;
+  align-items: normal;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+.card__option dd {
+  margin-left: 0;
+  text-align: right;
+}
+
+.card__text {
+  @include font ($size: 12px, $height: 16px);
+  margin: 0;
+  margin-bottom: 21px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.card__button {
+  grid-area: button;
+  justify-self: stretch;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba($color: $white-color, $alpha: 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 250px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: auto;
+    max-width: 169px;
+  }
+}
+
+.card--more {
+  grid-template-areas:
+    "title"
+    "options"
+    "button";
+  justify-items: center;
+  padding-top: 78px;
+  background-image: url("../../icons/stack.svg#icon-plus");
+  background-position: 50% 25px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+
+  .card__title {
+    max-width: none;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    box-shadow: 0 0 0 2px $bg-basic-gray inset;
+    align-self: flex-end;
+    padding-top: 160px;
+    background-size: 60px 60px;
+    background-position: 50% 50px;
+
+    .card__title {
+      max-width: 134px;
+      margin-bottom: 0;
+    }
+
+    .card__text {
+      max-width: 170px;
+      margin-bottom: 55px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 153px;
+
+    .card__title {
+      margin-bottom: 15px;
+    }
+
+    .card__text {
+      margin-bottom: 70px;
+    }
+  }
+}
