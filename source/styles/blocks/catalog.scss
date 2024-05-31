@@ -9,8 +9,28 @@
 }
 
 .catalog__item {
+  display: grid;
+  grid-template-areas:
+    "image  title"
+    "image  options"
+    "button button";
+  padding: 20px 20px 25px;
+  border-bottom: 1px solid #ebebeb;
+
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+  }
+
   @media (min-width: $tablet-width) {
     width: 324px;
+    display: block;
+    padding: 0 37px 40px;
+    border: none;
+    background-image: linear-gradient(to bottom, $white-color 70px, $bg-basic-gray 70px);
+
+    &:first-child {
+      border: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -27,12 +47,13 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 93px;
+    margin-bottom: 95px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
+    margin-bottom: 93px;
   }
 }
 
@@ -40,8 +61,8 @@
   @include list-reset();
 
   @media (min-width: $tablet-width) {
-    @include flex-box ($flex-direction: row, $justify-content: start);
-    gap: 66px 60px;
+    @include flex-box ($flex-direction: row, $justify-content: stretch, $align-items: stretch);
+    gap: 71px 60px;
   }
 
   @media (min-width: $desktop-width) {
