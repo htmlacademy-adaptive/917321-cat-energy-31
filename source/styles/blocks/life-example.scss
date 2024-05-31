@@ -3,12 +3,12 @@
   padding: 25px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, $white-color 58%, #eaeaea 42%);
+    background-image: linear-gradient(to bottom, $white-color 57%, #eaeaea 42%);
     padding: 45px 30px 104px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, $white-color 32%, $bg-basic-gray 30%);
+    background-image: linear-gradient(to bottom, $white-color 31%, $bg-basic-gray 30%);
     padding: 77px 0 75px;
 
     @include flex-box($flex-direction: row);
@@ -135,6 +135,10 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -6px;
   }
 }
 
